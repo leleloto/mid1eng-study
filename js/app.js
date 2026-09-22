@@ -1,7 +1,15 @@
 /* 부팅·탭·저장. 과 추가는 data/lessonNN.js 만들고 index.html에 script 한 줄이면 끝. */
 
 const LESSONS = [];
-function registerLesson(l){ LESSONS.push(l); }   // data/*.js가 호출
+function registerLesson(l){ LESSONS.push(l); }   // data/lessonNN.js가 호출
+
+/* data/examNN.js가 호출. 과 데이터와 따로 둬서 기출만 갱신할 수 있게 함 */
+function registerExam(lessonId, items){
+  const l = LESSONS.find(x => x.id === lessonId);
+  if (l) l.exam = (l.exam || []).concat(items);
+  else EXAM_PENDING.push([lessonId, items]);     // 과 파일보다 먼저 로드된 경우
+}
+const EXAM_PENDING = [];
 
 /* 진도 저장 (이 브라우저에만). 실패해도 화면은 그대로 동작. */
 const Store = {
@@ -21,6 +29,7 @@ const TABS = [
   ["dialog", "대화문"],
   ["blank",  "본문 빈칸"],
   ["recall", "본문 암기"],
+  ["exam",   "기출문제"],
   ["gram",   "문법·표현"]
 ];
 
@@ -32,6 +41,8 @@ const App = {
   start(){
     if (!LESSONS.length) return;
     LESSONS.sort((a, b) => a.id - b.id);
+    EXAM_PENDING.forEach(([id, items]) => registerExam(id, items));
+    EXAM_PENDING.length = 0;
 
     const seg = document.querySelector("#lessonSeg");
     seg.innerHTML = LESSONS.map((l, i) =>

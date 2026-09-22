@@ -330,17 +330,22 @@ VIEWS.blank = {
       </div>`;
 
     const inputs = () => [...root.querySelectorAll(".blank")];
-    root.querySelector("#bCheck").onclick = () => {
+    /* 채점하면 틀린 칸에 정답이 들어가므로, 다시 풀기 전에는 재채점을 막음
+       (안 막으면 두 번째 채점이 무조건 100%로 나옴) */
+    root.querySelector("#bCheck").onclick = e => {
       let ok = 0;
       inputs().forEach(i => {
         const good = i.value.trim().toLowerCase() === i.dataset.a.toLowerCase();
         i.classList.toggle("ok", good); i.classList.toggle("no", !good);
         if (good) ok++; else i.value = i.dataset.a;
+        i.readOnly = true;
       });
+      e.target.disabled = true;
       root.querySelector("#bCnt").textContent = `${inputs().length}개 중 ${ok}개 정답`;
     };
     root.querySelector("#bClear").onclick = () => {
-      inputs().forEach(i => { i.value = ""; i.classList.remove("ok", "no"); });
+      inputs().forEach(i => { i.value = ""; i.readOnly = false; i.classList.remove("ok", "no"); });
+      root.querySelector("#bCheck").disabled = false;
       root.querySelector("#bCnt").textContent = "";
     };
   }
@@ -465,6 +470,99 @@ function diff(mine, right){
   while (j < b.length) out.push(`<u>${esc(b[j])}</u>`), j++;
   return out.join(" ") + `<div class="difflegend"><s>지울 것</s> · <u>빠뜨린 것</u></div>`;
 }
+
+/* ────────── 기출문제 ──────────
+   섹션(영역별 유형 / 자주 틀리는 / 서술형 / 적중 N회 …)을 골라서 풂.
+   정답이 없는 문항은 채점 대상에서 빼고 그렇다고 표시함. */
+const CIRCLED = ["①", "②", "③", "④", "⑤", "⑥", "⑦"];
+
+VIEWS.exam = {
+  mount(root, L){
+    const all = L.exam || [];
+    if (!all.length){
+      root.innerHTML = `<div class="card"><p class="note">이 과의 기출문제는 아직 안 들어왔음.</p></div>`;
+      return;
+    }
+
+    /* 섹션은 등장 순서 유지 */
+    const order = [], bySec = new Map();
+    all.forEach(q => {
+      if (!bySec.has(q.section)){ bySec.set(q.section, []); order.push(q.section); }
+      bySec.get(q.section).push(q);
+    });
+
+    root.innerHTML = `
+      <div class="bar" id="secBar">
+        ${order.map((s, i) => {
+          const items = bySec.get(s);
+          const n = items.filter(q => q.answer).length;
+          return `<button class="btn${i ? "" : " pri"}" data-sec="${esc(s)}">${esc(s)}
+                   <span class="secn">${items.length}${n < items.length ? `·채점 ${n}` : ""}</span></button>`;
+        }).join("")}
+      </div>
+      <div class="bar">
+        <button class="btn pri" id="exCheck">채점</button>
+        <button class="btn" id="exClear">다시 풀기</button>
+        <span class="count" id="exCnt"></span>
+      </div>
+      <div id="exList"></div>`;
+
+    const list = root.querySelector("#exList");
+
+    const drawSection = sec => {
+      const items = bySec.get(sec);
+      list.innerHTML = items.map((q, i) => {
+        const gradable = !!q.answer;
+        const body = q.type === "choice" && q.choices.length
+          ? `<div class="choices">${q.choices.map((c, j) =>
+              `<label class="ch"><input type="radio" name="q${i}" value="${CIRCLED[j]}">
+                 <span class="chn">${CIRCLED[j]}</span><span>${esc(c)}</span></label>`).join("")}</div>`
+          : `<input type="text" class="exin" placeholder="답을 쓰세요">`;
+        return `<div class="card exq" data-i="${i}" data-ans="${esc(q.answer || "")}" data-type="${q.type}">
+          <div class="exhead">
+            <span class="exno">${esc(q.no)}</span>
+            <span class="exprompt">${esc(q.prompt)}</span>
+            ${gradable ? "" : `<span class="nograde" title="해설 책자가 따로 있어 정답이 없음">정답 없음</span>`}
+          </div>
+          ${q.passage ? `<pre class="expass">${esc(q.passage)}</pre>` : ""}
+          ${q.note ? `<p class="exnote">※ ${esc(q.note)}</p>` : ""}
+          ${body}
+          <div class="exout"></div>
+        </div>`;
+      }).join("");
+      root.querySelector("#exCnt").textContent = "";
+      root.querySelector("#exCheck").disabled = false;
+    };
+
+    root.querySelector("#secBar").onclick = e => {
+      const b = e.target.closest("[data-sec]"); if (!b) return;
+      root.querySelectorAll("#secBar .btn").forEach(x => x.classList.toggle("pri", x === b));
+      drawSection(b.dataset.sec);
+    };
+
+    root.querySelector("#exCheck").onclick = e => {
+      let ok = 0, total = 0;
+      list.querySelectorAll(".exq").forEach(card => {
+        const ans = card.dataset.ans;
+        const out = card.querySelector(".exout");
+        if (!ans){ out.innerHTML = `<div class="exres dim">정답 미제공 — 해설 책자 확인 필요</div>`; return; }
+        total++;
+        const picked = card.querySelector("input[type=radio]:checked")?.value
+                    ?? card.querySelector(".exin")?.value ?? "";
+        const good = norm(picked) === norm(ans);
+        if (good) ok++;
+        out.innerHTML = `<div class="exres ${good ? "ok" : "no"}">${good ? "정답" : `오답 — 정답: ${esc(ans)}`}</div>`;
+        card.querySelectorAll("input").forEach(i => i.disabled = true);
+      });
+      e.target.disabled = true;
+      root.querySelector("#exCnt").textContent = total ? `채점 ${total}문항 중 ${ok}개 정답` : "채점 가능한 문항 없음";
+    };
+    root.querySelector("#exClear").onclick = () =>
+      drawSection(root.querySelector("#secBar .pri").dataset.sec);
+
+    drawSection(order[0]);
+  }
+};
 
 /* ────────── 문법 · 표현 ────────── */
 VIEWS.gram = {
