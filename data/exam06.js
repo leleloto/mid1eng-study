@@ -1,5 +1,6 @@
-/* 6과 기출문제 — 기출 PDF 전사본. 문제 수정은 이 파일에서.
-   answer가 빈 문항은 별책 해설집에만 정답이 있어 채점 대상에서 빠짐. */
+/* 6과 기출문제 — 기출 PDF 전사본.
+   answer가 빈 문항은 정답을 확정하지 못한 것(그림 필요·지문 가려짐 등)이라 채점에서 빠짐.
+   해설집을 구하면 answer만 채워 넣으면 됨. */
 registerExam(6, [
  {
   "page": 46,
@@ -15,7 +16,7 @@ registerExam(6, [
    "Can you please carry this box to my car? (옮기다)",
    "Can you please fix my bike? (타다)"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -32,7 +33,7 @@ registerExam(6, [
    "reuse",
    "small"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -49,7 +50,7 @@ registerExam(6, [
    "leader",
    "out"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -60,7 +61,7 @@ registerExam(6, [
   "prompt": "다음 짝지어진 두 단어의 관계가 같도록 빈칸에 주어진 철자로 시작하는 단어를 쓰시오.",
   "passage": "learn : study = decide : __________\n→ d__________________________",
   "choices": [],
-  "answer": "",
+  "answer": "determine",
   "note": "서술형"
  },
  {
@@ -77,7 +78,7 @@ registerExam(6, [
    "at – in",
    "at – at"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -88,7 +89,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞게 빈칸에 주어진 단어를 적절한 형태로 바꿔 쓰시오.",
   "passage": "사람들은 너무 잘 잊어버려요. (forget)\n→ People are so __________.",
   "choices": [],
-  "answer": "",
+  "answer": "forgetful",
   "note": "서술형"
  },
  {
@@ -116,7 +117,7 @@ registerExam(6, [
    "by",
    "with"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -133,7 +134,7 @@ registerExam(6, [
    "often",
    "clothes"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -144,7 +145,7 @@ registerExam(6, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "(1) 나는 플라스틱은 절대로 완전히 없어지지 않는다고 들었어.\n→ I heard that plastic never goes __________ __________.\n(2) 참고로, 남은 음식을 활용한 멋진 요리 아이디어는 인터넷에서 찾을 수 있어.\n→ __________, you can find great cooking ideas for __________ on the Internet.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) away completely / (2) FYI, leftovers",
   "note": "서술형"
  },
  {
@@ -161,7 +162,7 @@ registerExam(6, [
    "제안하기",
    "도움 요청하기"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -178,7 +179,7 @@ registerExam(6, [
    "Absolutely.",
    "Sorry, but I can't."
   ],
-  "answer": "",
+  "answer": "①④",
   "note": "정답 2개"
  },
  {
@@ -189,7 +190,7 @@ registerExam(6, [
   "prompt": "다음 @~ⓒ를 대화의 흐름에 맞게 순서대로 나열하여 쓰시오.",
   "passage": "G: I'm so hungry, but there's no food at home.\n@ I'm sorry, but I don't want to go out now. Can you please go to a restaurant and pick up some food?\nⓑ Sure. No problem.\nⓒ I know. Let's eat out.\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "ⓒ - @ - ⓑ",
   "note": "서술형"
  },
  {
@@ -206,7 +207,7 @@ registerExam(6, [
    "at – for",
    "at – to"
   ],
-  "answer": "",
+  "answer": "②",
   "note": "빈칸 @, ⓑ는 원문에 시각적으로 지워져(음영 처리) 있음"
  },
  {
@@ -217,7 +218,7 @@ registerExam(6, [
   "prompt": "위 대화의 괄호 (A) 안의 단어들을 순서대로 나열하여 쓰시오.",
   "passage": "M: @______ here or ⓑ______ go?\nG: @______ here, please. (A)(cup / you / can / , / and / my / glass / not / a / a / put / please / in / in / plastic / smoothie)?\nM: I'm sorry, but we don't use single-use plastic cups inside the café.\nG: Oh, I see.\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "And can you please put my smoothie in a plastic cup, not in a glass?",
   "note": "서술형"
  },
  {
@@ -234,7 +235,7 @@ registerExam(6, [
    "A: Can you do me a favor?\nB: Sure. Why not?",
    "A: Can you please turn off the light?\nB: Of course. I'll do it right away."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -262,7 +263,7 @@ registerExam(6, [
    "Can you run over there and turn off the water?",
    "Turn you off the water and can run over there?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -279,7 +280,7 @@ registerExam(6, [
    "Of course.",
    "I'm afraid, but I can't."
   ],
-  "answer": "",
+  "answer": "②⑤",
   "note": "정답 2개"
  },
  {
@@ -301,7 +302,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (B)의 우리말에 맞게 주어진 단어를 포함하여 9단어의 영어로 쓰시오.",
   "passage": "can / please / with / this trash bag\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "Can you please help me with this trash bag?",
   "note": "서술형"
  },
  {
@@ -318,7 +319,7 @@ registerExam(6, [
    "플로깅 동아리는 매주 토요일 오전에 플로깅을 한다.",
    "유나는 Alex에게 쓰레기봉투를 들어달라고 부탁했다."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -335,7 +336,7 @@ registerExam(6, [
    "want",
    "decided"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -352,7 +353,7 @@ registerExam(6, [
    "He",
    "What"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -369,7 +370,7 @@ registerExam(6, [
    "that",
    "when"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -380,7 +381,7 @@ registerExam(6, [
   "prompt": "괄호 안의 단어를 알맞은 형태로 빈칸에 쓰시오.",
   "passage": "He decided __________________ her again. (meet, not)\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "not to meet",
   "note": "서술형"
  },
  {
@@ -397,7 +398,7 @@ registerExam(6, [
    "to study – meeting",
    "to study – to meet"
   ],
-  "answer": "",
+  "answer": "③⑤",
   "note": ""
  },
  {
@@ -414,7 +415,7 @@ registerExam(6, [
    "Finish to do your work in an hour.",
    "I decide to meet him tomorrow."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -431,7 +432,7 @@ registerExam(6, [
    "ⓓ",
    "ⓔ"
   ],
-  "answer": "",
+  "answer": "ⓑ",
   "note": ""
  },
  {
@@ -448,7 +449,7 @@ registerExam(6, [
    "I think that Dan likes Jenny.",
    "She is sure that they will come tomorrow."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -459,7 +460,7 @@ registerExam(6, [
   "prompt": "다음 우리말을 주어진 단어들을 배열하여 바르게 영작하시오. (필요한 경우 형태를 바꾸시오.)",
   "passage": "나는 플라스틱은 절대로 완전히 없어지지 않는다고 들었어.\n(go away, heard, I, never, plastic, completely)\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "I heard plastic never goes away completely.",
   "note": "서술형, 31~32"
  },
  {
@@ -470,7 +471,7 @@ registerExam(6, [
   "prompt": "다음 우리말을 주어진 단어들을 배열하여 바르게 영작하시오. (필요한 경우 형태를 바꾸시오.)",
   "passage": "나는 가방을 고쳐서 다시 사용하기로 결심했어.\n(reuse, decided, I, fix, to, and, my bag, it)\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "I decided to fix my bag and reuse it.",
   "note": "서술형, 31~32"
  },
  {
@@ -487,7 +488,7 @@ registerExam(6, [
    "I didn't mean __________ laugh at you.",
    "I hope __________ you can make it."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -498,7 +499,7 @@ registerExam(6, [
   "prompt": "다음 괄호 안의 동사의 형태를 바르게 고치시오.",
   "passage": "(A) I hope (see) my cousins again.\n(B) My job is (direct) movies from script to screen.\n(A) → __________________________\n(B) → __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "(A) to see / (B) to direct",
   "note": "서술형"
  },
  {
@@ -515,7 +516,7 @@ registerExam(6, [
    "What's that?",
    "I think that she will succeed."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -526,7 +527,7 @@ registerExam(6, [
   "prompt": "주어진 단어들을 바르게 배열하여 우리말에 맞는 문장을 완성하시오.",
   "passage": "그녀는 자신이 특별하다고 생각한다.\n(special, thinks, that, she, is, she)\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "She thinks that she is special.",
   "note": "서술형"
  },
  {
@@ -543,7 +544,7 @@ registerExam(6, [
    "I like to play tennis with my cousin.",
    "My hobby is to climb mountains."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -560,7 +561,7 @@ registerExam(6, [
    "She remembered __________ walk his dog.",
    "His hobby is __________ watch classic movies."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -577,7 +578,7 @@ registerExam(6, [
    "It is hard to master science in a year.",
    "I want to climb the mountain this weekend."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -588,7 +589,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 공통으로 들어갈 말을 쓰시오.",
   "passage": "• I think __________ running is a good exercise.\n• Do you guess __________ the answer is correct?\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "that",
   "note": "서술형"
  },
  {
@@ -605,7 +606,7 @@ registerExam(6, [
    "Did you decide to buy the new phone? (plan)",
    "He plans to go to the library. (hopes)"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -616,7 +617,7 @@ registerExam(6, [
   "prompt": "다음 우리말을 영어로 옮길 때 빈칸에 알맞은 말을 쓰시오.",
   "passage": "(1) 나는 모든 것이 좋아질 거라고 생각한다.\n→ __________ __________ __________ everything will be okay.\n(2) 나는 우리가 곧 만날 수 있다고 믿는다.\n→ __________ __________ __________ we can meet soon.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) I think that / (2) I believe that",
   "note": "서술형"
  },
  {
@@ -627,7 +628,7 @@ registerExam(6, [
   "prompt": "다음 문장의 빈칸에, 괄호 안의 단어를 알맞은 형태로 바꾸어 쓰시오.",
   "passage": "(1) I planned __________________ a party on my birthday. (throw)\n(2) Sean wants __________________ a rest for a while. (take)\n→ (1) __________________ (2) __________________",
   "choices": [],
-  "answer": "",
+  "answer": "(1) to throw / (2) to take",
   "note": "서술형"
  },
  {
@@ -638,7 +639,7 @@ registerExam(6, [
   "prompt": "다음 문장에서 어법상 틀린 곳을 고쳐 올바른 문장으로 다시 쓰시오.",
   "passage": "I don't think what the bag looks perfect.\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "I don't think that the bag looks perfect.",
   "note": "서술형"
  },
  {
@@ -649,7 +650,7 @@ registerExam(6, [
   "prompt": "주어진 우리말에 맞게 괄호 속 단어들을 올바른 순서로 배열하시오. (단, 하나의 단어를 반드시 추가하시오.)",
   "passage": "나는 재사용하는 것이 제로 웨이스트 생활에 중요하다고 배웠어.\n(I, important, zero-waste living, is, learned, for, reusing)\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "I learned that reusing is important for zero-waste living.",
   "note": "서술형"
  },
  {
@@ -677,7 +678,7 @@ registerExam(6, [
    "for – on",
    "of – on"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -688,8 +689,11 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 Athem이 가리키는 것을 본문에서 찾아 쓰시오.",
   "passage": "Challenge 01 Reduce Food Waste\nOlivia: My birthday was last Saturday, and my family and I ate out. There were lots of leftovers, but we brought Athem home. The next day, I made a nice lunch out of them. FYI, you can find great cooking ideas @______ leftovers ⓑ______ the Internet.\n→ __________________________",
   "choices": [],
-  "answer": "",
-  "note": "서술형"
+  "answer": "the leftovers",
+  "note": "서술형",
+  "alt": [
+   "them (leftovers)"
+  ]
  },
  {
   "page": 53,
@@ -705,7 +709,7 @@ registerExam(6, [
    "They didn't bring any leftovers home.",
    "The next day, Olivia made a nice lunch out of leftovers from the restaurant."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -722,7 +726,7 @@ registerExam(6, [
    "a number of",
    "a great deal of"
   ],
-  "answer": "",
+  "answer": "②③⑤",
   "note": ""
  },
  {
@@ -739,7 +743,7 @@ registerExam(6, [
    "Save me some food.",
    "He couldn't save money for his old age."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -767,7 +771,7 @@ registerExam(6, [
    "Everyday – Recycle – nice",
    "Every day – Reduce – a nice"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -778,7 +782,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 @getting과 바꿔 쓸 수 있는 말을 쓰시오. (b로 시작할 것.)",
   "passage": "(A)[Everyday / Every day], we produce lots of waste, and the Earth is @getting sicker and sicker. Do you want to save the Earth? Then, join the zero-waste challenge, and share your stories.\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "becoming",
   "note": "서술형"
  },
  {
@@ -789,7 +793,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑ의 우리말에 맞게 6단어로 영작하시오.",
   "passage": "Olivia: My birthday was last Saturday, and ⓑ나의 가족과 나는 외식을 했다. There were lots of leftovers, but we brought them home.\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "My family and I ate out.",
   "note": "서술형"
  },
  {
@@ -806,7 +810,7 @@ registerExam(6, [
    "Her hobby is playing computer games.",
    "I saw him playing computer games."
   ],
-  "answer": "",
+  "answer": "②③④",
   "note": ""
  },
  {
@@ -823,7 +827,7 @@ registerExam(6, [
    "the way to fix the old bag",
    "the importance of reuse for zero-waste living"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -840,7 +844,7 @@ registerExam(6, [
    "Is Domingo good at sewing?",
    "Does the bag look perfect to Domingo?"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -857,7 +861,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -874,7 +878,7 @@ registerExam(6, [
    "the life cycle of plastic",
    "the kinds of single-use plastic"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -885,7 +889,7 @@ registerExam(6, [
   "prompt": "다음 질문에 대한 알맞은 대답을 빈칸에 쓰시오.",
   "passage": "Q: What did Emma take with her to her favorite restaurant?\nA: __________________________\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "She took a reusable container (with her).",
   "note": "서술형"
  },
  {
@@ -902,7 +906,7 @@ registerExam(6, [
    "Will you be free next Sunday?",
    "He got a free ride."
   ],
-  "answer": "",
+  "answer": "②⑤",
   "note": ""
  },
  {
@@ -919,7 +923,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -936,7 +940,7 @@ registerExam(6, [
    "I no less need my old earphones.",
    "I no more need my old earphones."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -953,7 +957,7 @@ registerExam(6, [
    "into – with",
    "on – with"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "빈칸 @, ⓑ는 원문에 시각적으로 지워져(음영 처리) 있음"
  },
  {
@@ -964,7 +968,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓒthat이 가리키는 것을 우리말로 쓰시오.",
   "passage": "Challenge 04 Recycle\nMinsu: Yesterday, I took some plastic and glass bottles to a recycling machine near my house. I put them @______ the machine one by one, and I got some points in return. What can I do ⓑ______ those points? Well, I can use them like money. Don't you think ⓒthat's cool?\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "포인트를 돈처럼 쓸 수 있다는 것",
   "note": "서술형"
  },
  {
@@ -981,7 +985,7 @@ registerExam(6, [
    "Minsu can use the points like money.",
    "Minsu doesn't think that's cool."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -992,8 +996,11 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 @them이 가리키는 것을 본문에서 찾아 쓰시오.",
   "passage": "Free Sneakers\nI want to give away my sneakers. I bought @them at an online shop last year. ⓑThey were a little small for me, so I didn't wear them often. The size is 250 mm, and the color is red. I think they look good with all clothes.\n→ __________________________",
   "choices": [],
-  "answer": "",
-  "note": "서술형"
+  "answer": "my sneakers",
+  "note": "서술형",
+  "alt": [
+   "the sneakers"
+  ]
  },
  {
   "page": 56,
@@ -1003,8 +1010,12 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑ를 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 접속사를 쓰시오.",
   "passage": "__________ they were a little small for me, I didn't wear them often.",
   "choices": [],
-  "answer": "",
-  "note": "서술형"
+  "answer": "Because",
+  "note": "서술형",
+  "alt": [
+   "Since",
+   "As"
+  ]
  },
  {
   "page": 56,
@@ -1020,7 +1031,7 @@ registerExam(6, [
    "What's the size or color of the sneakers?",
    "What does the writer think about the sneakers?"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1037,7 +1048,7 @@ registerExam(6, [
    "It's true that we were a little late.",
    "She told me that I should be more careful."
   ],
-  "answer": "",
+  "answer": "②④⑤",
   "note": ""
  },
  {
@@ -1048,7 +1059,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑ를 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 말을 두 단어로 쓰시오.",
   "passage": "I can't sew __________ __________.",
   "choices": [],
-  "answer": "",
+  "answer": "very well",
   "note": "서술형"
  },
  {
@@ -1065,7 +1076,7 @@ registerExam(6, [
    "the",
    "that"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1076,7 +1087,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 @에서 흐름상 어색한 부분을 찾아 고치시오.",
   "passage": "Challenge 03 @Say Yes to Single-Use Plastic\nEmma: ⓑI often use food delivery services, but today I didn't. Instead, I walked to my favorite restaurant with a reusable container and picked up the food. I heard that plastic never goes away completely. I didn't use any single-use plastic today. I felt good!\n__________________________ → __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "Say Yes to Single-Use Plastic → Say No to Single-Use Plastic",
   "note": "서술형"
  },
  {
@@ -1087,7 +1098,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑ 문장 뒤에 생략된 말을 쓰시오.",
   "passage": "Challenge 03 @Say Yes to Single-Use Plastic\nEmma: ⓑI often use food delivery services, but today I didn't. Instead, I walked to my favorite restaurant with a reusable container and picked up the food. I heard that plastic never goes away completely. I didn't use any single-use plastic today. I felt good!\n→ __________________________",
   "choices": [],
-  "answer": "",
+  "answer": "use food delivery services",
   "note": "서술형"
  },
  {
@@ -1104,7 +1115,7 @@ registerExam(6, [
    "Emma heard that plastic goes away completely.",
    "Emma used some single-use plastic today."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1121,7 +1132,7 @@ registerExam(6, [
    "Every day, we produce lots of waste. (생산하다)",
    "People are so forgetful. (잊어버리다)"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": "어휘(W) 영역"
  },
  {
@@ -1138,7 +1149,7 @@ registerExam(6, [
    "single-use: made to be used more than once",
    "leftover: food that has not been eaten at the end of a meal"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "어휘(W) 영역"
  },
  {
@@ -1149,7 +1160,7 @@ registerExam(6, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "대신에, 재사용 가능한 용기를 가지고 내가 가장 좋아하는 식당으로 걸어가서 음식을 가져왔어.\n→ __________, I walked to my favorite restaurant with a __________ __________ and picked __________ the food.",
   "choices": [],
-  "answer": "",
+  "answer": "Instead / reusable container / up",
   "note": "서술형, 어휘(W) 영역"
  },
  {
@@ -1166,7 +1177,7 @@ registerExam(6, [
    "can",
    "could"
   ],
-  "answer": "",
+  "answer": "②",
   "note": "대화(C) 영역. 빈칸 @, ⓑ, ⓒ는 원문에 시각적으로 지워져(음영 처리) 있음"
  },
  {
@@ -1183,7 +1194,7 @@ registerExam(6, [
    "repair",
    "tear"
   ],
-  "answer": "",
+  "answer": "③",
   "note": "대화(C) 영역"
  },
  {
@@ -1200,7 +1211,7 @@ registerExam(6, [
    "Can I ask you to water the plants?",
    "Why do you water the plants?"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": "대화(C) 영역"
  },
  {
@@ -1228,7 +1239,7 @@ registerExam(6, [
    "so",
    "until"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1239,8 +1250,11 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말을 다음 <조건>에 맞게 영작하시오.",
   "passage": "조건\n1. 조동사 can으로 시작하여 쓸 것.\n2. 단어 please와 pick을 포함해서 쓸 것.\n3. 12단어의 영어로 쓸 것.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "Can you please go to the restaurant and pick up the food?",
+  "note": "",
+  "alt": [
+   "Can you please pick up the food from the restaurant?"
+  ]
  },
  {
   "page": 59,
@@ -1256,7 +1270,7 @@ registerExam(6, [
    "That she can speak English and French are true.",
    "We enjoyed to help homeless people."
   ],
-  "answer": "",
+  "answer": "④, ⑤",
   "note": ""
  },
  {
@@ -1273,7 +1287,7 @@ registerExam(6, [
    "3개",
    "4개"
   ],
-  "answer": "",
+  "answer": "2개",
   "note": ""
  },
  {
@@ -1284,7 +1298,7 @@ registerExam(6, [
   "prompt": "다음 중 어법상 틀린 두 문장을 찾아 바르게 고쳐 문장을 다시 쓰시오.",
   "passage": "ⓐ I hear she is a doctor.\nⓑ He decided to quit his job.\nⓒ I really hope seeing them again.\nⓓ I think that this painting to be really great.\n\n(1) ( )→ ______\n(2) ( )→ ______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) I really hope seeing them again. → I really hope to see them again.\n(2) I think that this painting to be really great. → I think that this painting is really great.",
   "note": ""
  },
  {
@@ -1301,7 +1315,7 @@ registerExam(6, [
    "I have no time to waste.",
    "You waste a good opportunity."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1318,7 +1332,7 @@ registerExam(6, [
    "4개",
    "5개"
   ],
-  "answer": "",
+  "answer": "2개",
   "note": ""
  },
  {
@@ -1329,7 +1343,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓒ에서 어법상 틀린 부분을 찾아 고치시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "brought them to home → brought them home",
   "note": ""
  },
  {
@@ -1346,7 +1360,7 @@ registerExam(6, [
    "Upcycle Old Things!",
    "Renew and Save the Earth"
   ],
-  "answer": "",
+  "answer": "③",
   "note": "ⓐ 자리가 음영 처리되어 원문 텍스트가 가려짐(문제용 빈칸으로 추정)"
  },
  {
@@ -1363,7 +1377,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1374,8 +1388,11 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑone이 가리키는 것을 본문에서 찾아 쓰시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "a new bag",
+  "note": "",
+  "alt": [
+   "bag"
+  ]
  },
  {
   "page": 61,
@@ -1385,7 +1402,7 @@ registerExam(6, [
   "prompt": "주어진 우리말을 보고 빈칸에 알맞은 단어를 <보기>에서 골라 쓰시오.",
   "passage": "보기\nenvironment zero waste sick guess else\n\n(1) 0의 → ______\n(2) 쓰레기; 낭비하다 → ______\n(3) 추측하다, 짐작하다 → ______\n(4) 환경 → ______\n(5) 아픈, 병든 → ______\n(6) 다른, 그 밖의 → ______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) zero / (2) waste / (3) guess / (4) environment / (5) sick / (6) else",
   "note": ""
  },
  {
@@ -1407,7 +1424,7 @@ registerExam(6, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "(1) 나는 그것들을 하나씩 기계에 집어넣었고, 대가로 포인트를 얻었어.\n→ I put them ______ the ______ one ______ one, and I got some points in ______.\n(2) 그런데, 이 쓰레기봉투 드는 것 좀 도와줄래?\n→ ______ the ______, can you please ______ me with this trash bag?\n(3) 플로깅은 조깅과 쓰레기 줍기를 동시에 한다는 뜻이야.\n→ Plogging means jogging and ______ ______ trash ______ ______.\n(4) 나는 플라스틱병과 유리병 몇 개를 집 근처에 있는 재활용 기계로 가져갔어.\n→ I took some plastic and ______ ______ to a ______ ______ near my house.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) into / machine / by / return\n(2) By / way / help\n(3) picking / up / at / the same time\n(4) glass bottles / recycling machine",
   "note": ""
  },
  {
@@ -1418,7 +1435,7 @@ registerExam(6, [
   "prompt": "다음 대화의 밑줄 친 우리말에 맞게 빈칸에 알맞은 단어를 쓰시오.",
   "passage": "M: 이 상자를 내 차로 옮겨 줄 수 있니?\nG: I'm really sorry, Dad, but I'm late for my class.\nM: Oh, I see. I'll ask somebody else.\n\n(1) ______ you ______ carry this box to my car?\n(2) ______ I ______ you to carry this box to my car?",
   "choices": [],
-  "answer": "",
+  "answer": "(1) Can / please\n(2) Can / ask",
   "note": ""
  },
  {
@@ -1429,7 +1446,7 @@ registerExam(6, [
   "prompt": "[05~06] 다음 대화를 읽고, 물음에 답하시오.\n위 대화의 빈칸 ⓐ와 ⓑ에 들어갈 알맞은 단어를 쓰시오.",
   "passage": "G: I'd like a banana smoothie, please.\nM: For ⓐ______ or to ⓑ______?\nG: For ⓐ______, please. And can you please put it in a plastic cup, not in a glass?\nM: (A)______",
   "choices": [],
-  "answer": "",
+  "answer": "ⓐ here, ⓑ go",
   "note": "ⓐ, ⓑ 및 (A) 자리 텍스트가 음영 처리되어 가려짐"
  },
  {
@@ -1440,7 +1457,7 @@ registerExam(6, [
   "prompt": "위 대화의 빈칸 (A)에 다음 <조건>에 맞는 표현을 쓰시오.",
   "passage": "조건\n1. No를 포함하여 2단어의 영어로 쓸 것.\n2. 요청을 승낙하는 의미의 표현을 쓸 것.",
   "choices": [],
-  "answer": "",
+  "answer": "No problem.",
   "note": ""
  },
  {
@@ -1451,7 +1468,7 @@ registerExam(6, [
   "prompt": "다음 문장의 밑줄 친 부분을 바르게 고쳐 쓰시오.",
   "passage": "(1) Our goal is to improving our English. →______\n(2) I believe it we can do anything. →______\n(3) My dream is become a great doctor. →______\n(4) Did he enjoy to travel around the world last year? →______\n(5) We were waiting for her, that she didn't come back. →______\n(6) He promised to not forget my birthday. →______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) to improving → to improve\n(2) it → that\n(3) become → to become\n(4) to travel → traveling\n(5) that → but\n(6) to not forget → not to forget",
   "note": ""
  },
  {
@@ -1462,7 +1479,7 @@ registerExam(6, [
   "prompt": "우리말과 의미가 같도록 주어진 단어를 알맞은 형태로 써서 문장을 완성하시오.",
   "passage": "(1) 나는 채소를 먹기로 결심했다. (eat)\n→ I decided ______ ______ vegetables.\n(2) 나는 Tom이 기분이 좋다고 생각하지 않는다. (think)\n→ I ______ ______ ______ Tom feels good.\n(3) 너는 진호가 좋은 사람이라고 믿고 있니? (believe)\n→ ______ you ______ Jinho is a nice person?",
   "choices": [],
-  "answer": "",
+  "answer": "(1) to / eat\n(2) don't / think / that\n(3) Do / believe",
   "note": ""
  },
  {
@@ -1473,7 +1490,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 괄호 안의 단어들을 바르게 배열하시오. (필요시 어형을 바꿀 것.)",
   "passage": "나는 그녀가 우리 학교에서 최고의 선생님이라고 믿고 있어.\n(teacher, believe, I, she, that, the best, be, in our school)",
   "choices": [],
-  "answer": "",
+  "answer": "I believe that she is the best teacher in our school.",
   "note": ""
  },
  {
@@ -1484,7 +1501,7 @@ registerExam(6, [
   "prompt": "다음 ①~⑥ 중 밑줄 친 부분이 잘못된 문장을 두 개를 찾아서 괄호 안에 번호를 쓰고 바르게 고쳐 쓰시오.",
   "passage": "• He ①refused taking my advice.\n• It's impossible ②to find her house.\n• He ③promised to keep a diary in English.\n• She ④decided to buy him a birthday present.\n• I think ⑤that is he kind and friendly.\n• I heard ⑥plastic never goes away completely.\n\n( )→ ______. ( )→ ______",
   "choices": [],
-  "answer": "",
+  "answer": "(①)→ refused to take my advice. (⑤)→ I think that he is kind and friendly.",
   "note": ""
  },
  {
@@ -1495,7 +1512,7 @@ registerExam(6, [
   "prompt": "다음 두 문장을 한 문장으로 바꾸어 쓰시오.",
   "passage": "(1) Plastic never goes away completely. I know it.\n→ ______\n(2) Reusing is important for zero-waste living. I learned it.\n→ ______\n(3) She wants it. It is to become a singer in the future.\n→ ______\n(4) My hobby is it. It is to play soccer on weekends.\n→ ______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) I know that plastic never goes away completely.\n(2) I learned that reusing is important for zero-waste living.\n(3) She wants to become a singer in the future.\n(4) My hobby is to play soccer on weekends.",
   "note": ""
  },
  {
@@ -1506,7 +1523,7 @@ registerExam(6, [
   "prompt": "[12~14] 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐ의 우리말에 맞게 주어진 단어를 이용하여 7단어로 영작하시오. (get, sick)",
   "passage": "Every day, we produce lots of waste, and ⓐ지구는 점점 더 병들고 있습니다. Do you want to save the Earth? ⓑThen, join the zero-waste challenge, and share your stories.\n\nChallenge 01 Reduce Food Waste\nOlivia: My birthday was last Saturday, and my family and I ate out. There were lots of leftovers, but we brought them home. The next day, I made a nice lunch out of them. ⓒFYI, you can find great cooking ideas for leftovers on the Internet.",
   "choices": [],
-  "answer": "",
+  "answer": "the Earth is getting sicker and sicker",
   "note": ""
  },
  {
@@ -1517,7 +1534,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑThen을 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 접속사를 쓰시오.",
   "passage": "______ you want to save the Earth",
   "choices": [],
-  "answer": "",
+  "answer": "If",
   "note": ""
  },
  {
@@ -1528,7 +1545,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓒFYI의 (1)뜻을 우리말로 쓰고, (2)어떤 말의 줄임말인지를 영어로 쓰시오.",
   "passage": "(1) ______\n(2) ______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) 참고로\n(2) for your information",
   "note": ""
  },
  {
@@ -1539,7 +1556,7 @@ registerExam(6, [
   "prompt": "[15~16] 다음 글을 읽고, 물음에 답하시오.\n위 글의 빈칸 ⓐ에 들어갈 알맞은 대명사를 쓰시오.",
   "passage": "Challenge 02 Reuse\nDomingo: My dog tore my bag. I wanted to buy a new ⓐ______, but I thought again. I learned that reusing is important for zero-waste living. ⓑSo, I decided to fix it and reusing it. I'm not very good at sewing, and I don't think that the bag looks perfect. I guess it's all right.",
   "choices": [],
-  "answer": "",
+  "answer": "one",
   "note": "ⓐ 자리가 음영 처리되어 원문 텍스트가 가려짐(문제용 빈칸으로 추정)"
  },
  {
@@ -1550,7 +1567,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 ⓑ에서 어법상 틀린 부분을 찾아 고치시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "reusing → reuse",
   "note": ""
  },
  {
@@ -1561,7 +1578,7 @@ registerExam(6, [
   "prompt": "[17~19] 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐInstead를 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 말을 네 단어로 쓰시오.",
   "passage": "Challenge 03 Say No to Single-Use Plastic\nEmma: I often use food delivery services, but today I didn't. ⓐInstead, I walked to my favorite restaurant with a reusable container and picked up the food. ⓑI heard that plastic never goes away completely. I didn't use any single-use plastic today. I felt good!\n\n→ Instead of ______.",
   "choices": [],
-  "answer": "",
+  "answer": "using food delivery services",
   "note": ""
  },
  {
@@ -1572,7 +1589,7 @@ registerExam(6, [
   "prompt": "위 글의 밑줄 친 문장 ⓑ에서 생략할 수 있는 부분을 생략하고 문장을 다시 쓰시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "I heard plastic never goes away completely.",
   "note": ""
  },
  {
@@ -1583,7 +1600,7 @@ registerExam(6, [
   "prompt": "본문의 내용과 일치하도록 다음 빈칸 (A)와 (B)에 알맞은 단어를 쓰시오.",
   "passage": "Today Emma didn't use any (A)______ ______ because she walked to her favorite restaurant with (B)______ ______ ______ and picked up the food.\n\n→ (A) ______ (B) ______",
   "choices": [],
-  "answer": "",
+  "answer": "(A) single-use plastic (B) a reusable container",
   "note": ""
  },
  {
@@ -1594,7 +1611,7 @@ registerExam(6, [
   "prompt": "[20~21] 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐ의 우리말을 영어로 쓰시오. (3단어)",
   "passage": "Challenge 04 Recycle\nMinsu: Yesterday, I took some plastic and glass bottles to a recycling machine near my house. I put them into the machine ⓐ하나씩, and I got some points in return. What can I do with ⓑthose points? Well, I can use them like money. Don't you think that's cool?",
   "choices": [],
-  "answer": "",
+  "answer": "one by one",
   "note": ""
  },
  {
@@ -1605,7 +1622,7 @@ registerExam(6, [
   "prompt": "다음 빈칸 (A)와 (B)에 알맞은 단어를 넣어 ⓑthose points에 대한 소개를 완성하시오.",
   "passage": "They are the points you got (A)______ ______ after putting plastic and glass bottles into the (B)______ ______.\n\n→ (A) ______ (B) ______",
   "choices": [],
-  "answer": "",
+  "answer": "(A) in return (B) recycling machine",
   "note": ""
  },
  {
@@ -1622,7 +1639,7 @@ registerExam(6, [
    "I'll ask somebody else. (부탁하다)",
    "There were lots of leftovers, but we brought them home. (남은 음식들)"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1639,7 +1656,7 @@ registerExam(6, [
    "reuse",
    "return"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1650,7 +1667,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 말을 <보기>에서 찾아 쓰시오.",
   "passage": "보기\nproduce perfect close turn\n\n(1) Can you run over there and ______ off the water?\n(2) Every day, we ______ lots of waste.\n(3) Excuse me, but can you please ______ the door?\n(4) I don't think that the bag looks ______.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) turn (2) produce (3) close (4) perfect",
   "note": ""
  },
  {
@@ -1667,7 +1684,7 @@ registerExam(6, [
    "you",
    "can"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1678,7 +1695,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (B)의 우리말에 맞게 빈칸에 알맞은 단어를 쓰시오.",
   "passage": "I'm really ______, Dad, ______ I'm ______ ______ my class.",
   "choices": [],
-  "answer": "",
+  "answer": "sorry / but / late for",
   "note": ""
  },
  {
@@ -1695,7 +1712,7 @@ registerExam(6, [
    "I'm sorry, but I'm busy now.",
    "I'm going to ride it."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1712,7 +1729,7 @@ registerExam(6, [
    "Can you help me with this trash bag?",
    "Can you give me a hand with this trash bag?"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1729,7 +1746,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1746,7 +1763,7 @@ registerExam(6, [
    "How many members does Yuna's club have?",
    "When do the club members plog?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1763,7 +1780,7 @@ registerExam(6, [
    "ⓓ",
    "ⓔ"
   ],
-  "answer": "",
+  "answer": "ⓒ",
   "note": ""
  },
  {
@@ -1780,7 +1797,7 @@ registerExam(6, [
    "Finish to play the game by 8.",
    "I decided to meet him again."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1797,7 +1814,7 @@ registerExam(6, [
    "He",
    "What"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1808,7 +1825,7 @@ registerExam(6, [
   "prompt": "다음 우리말과 같도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "Sean은 내년에 유럽을 여행하고 싶어 한다.\n(want, travel to Europe)\n→ Sean ______.",
   "choices": [],
-  "answer": "",
+  "answer": "wants to travel to Europe next year",
   "note": ""
  },
  {
@@ -1825,7 +1842,7 @@ registerExam(6, [
    "where",
    "why"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1842,7 +1859,7 @@ registerExam(6, [
    "to do – seeing",
    "to do – to see"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1859,7 +1876,7 @@ registerExam(6, [
    "He knows that I bought the sneakers.",
    "I'm sure that he will come tomorrow."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1876,7 +1893,7 @@ registerExam(6, [
    "lots of",
    "a few"
   ],
-  "answer": "",
+  "answer": "①, ④",
   "note": "ⓐ, ⓑ, ⓒ 자리가 음영 처리되어 원문 텍스트가 가려짐(문제용 빈칸으로 추정)"
  },
  {
@@ -1893,7 +1910,7 @@ registerExam(6, [
    "Reduce Food Waste",
    "Recycle"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1910,7 +1927,7 @@ registerExam(6, [
    "Out of sight, out of mind.",
    "He ran out of money."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1921,8 +1938,11 @@ registerExam(6, [
   "prompt": "[20~23] 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐone이 가리키는 것을 영어로 쓰시오.",
   "passage": "Challenge 02 Reuse\nDomingo: My dog tore my bag. I wanted to buy a new ⓐone, but I thought again. I learned that reusing is important ⓑ______ zero-waste living. So, I decided ⓒto fix it and reuse it. I'm not very good at sewing, and I don't think that the bag looks perfect. I guess it's all right.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "a new bag",
+  "note": "",
+  "alt": [
+   "bag"
+  ]
  },
  {
   "page": 69,
@@ -1938,7 +1958,7 @@ registerExam(6, [
    "of",
    "for"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1955,7 +1975,7 @@ registerExam(6, [
    "4개",
    "5개"
   ],
-  "answer": "",
+  "answer": "3개",
   "note": ""
  },
  {
@@ -1972,7 +1992,7 @@ registerExam(6, [
    "Domingo decided not to reuse his bag.",
    "Domingo is very good at sewing."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1983,7 +2003,7 @@ registerExam(6, [
   "prompt": "[24~25] 다음 글을 읽고, 물음에 답하시오.\n주어진 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오.",
   "passage": "Free Earphones!\nI want to give away my earphones. I bought them at a shopping mall ten months ago. I got new earphones for my birthday last week, so I don't need my old earphones anymore. They are white, and I think they're in good condition.\n\na large building or group of buildings containing many different stores\n→ ______",
   "choices": [],
-  "answer": "",
+  "answer": "shopping mall",
   "note": ""
  },
  {
@@ -2000,7 +2020,7 @@ registerExam(6, [
    "The writer no more needs his(her) old earphones.",
    "The old earphones are white, and they're in good condition."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2017,7 +2037,7 @@ registerExam(6, [
    "put",
    "sew"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2034,7 +2054,7 @@ registerExam(6, [
    "take",
    "reduce"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2045,7 +2065,7 @@ registerExam(6, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "(1) 우리는 환경의 날에 학교 주변에서 함께 플로깅을 할 예정이야.\n→ We're going to ______ together around the school on ______ Day.\n(2) 제로 웨이스트 챌린지에 동참하고 당신의 이야기를 공유해 주세요.\n→ Join the ______ ______, and ______ your stories.\n(3) 나는 항상 캔과 병을 재활용한다.\n→ I ______ ______ cans and bottles.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) plog / Environment\n(2) zero-waste / challenge / share\n(3) always / recycle",
   "note": ""
  },
  {
@@ -2062,7 +2082,7 @@ registerExam(6, [
    "Can I ask you a favor?",
    "Can you give me a hand?"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2073,7 +2093,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (B)와 의미가 같도록 빈칸에 알맞은 단어를 쓰시오.",
   "passage": "(1) I'm ______ I can't.\n(2) I'd ______ ______, ______ I can't.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) afraid\n(2) love / to / but",
   "note": ""
  },
  {
@@ -2090,7 +2110,7 @@ registerExam(6, [
    "ⓒ-ⓐ-ⓑ",
    "ⓒ-ⓑ-ⓐ"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2107,7 +2127,7 @@ registerExam(6, [
    "Why not?",
    "Of course."
   ],
-  "answer": "",
+  "answer": "④, ⑤",
   "note": ""
  },
  {
@@ -2124,7 +2144,7 @@ registerExam(6, [
    "can",
    "would"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2135,7 +2155,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말을 다음 <조건>에 맞게 영작하시오.",
   "passage": "조건\n1. 접속사 but을 사용할 것.\n2. 축약형을 사용하여 12단어로 쓸 것.\n3. 단어 sorry, single-use를 사용할 것.",
   "choices": [],
-  "answer": "",
+  "answer": "I'm sorry, but we don't use single-use plastic cups inside the cafe.",
   "note": ""
  },
  {
@@ -2152,7 +2172,7 @@ registerExam(6, [
    "He remembered to walk his dog, Max.",
    "His hobby is listening to K-pop."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2169,7 +2189,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2180,7 +2200,7 @@ registerExam(6, [
   "prompt": "우리말에 맞게 주어진 단어를 활용하여 문장을 완성하시오.",
   "passage": "나는 플라스틱 병 몇 개를 집 근처에 있는 재활용 기계로 가져가고 싶다.\n(a recycling machine, to, want, some, take, to, plastic bottles)\n→ I ______ near my house.",
   "choices": [],
-  "answer": "",
+  "answer": "want to take some plastic bottles to a recycling machine",
   "note": ""
  },
  {
@@ -2197,7 +2217,7 @@ registerExam(6, [
    "It's quite challenging to learn English.",
    "He believes she's famous for her singing."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2248,7 +2268,7 @@ registerExam(6, [
    "I heard her playing the piano.",
    "She is good at making dolls."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2259,7 +2279,7 @@ registerExam(6, [
   "prompt": "다음 문장에서 위 글의 내용과 다른 부분을 찾아서 고치시오.",
   "passage": "Every day, we produce lots of waste, and the Earth is ⓐgetting sicker and sicker. Do you want to save the Earth? Then, join the zero-waste challenge, and share your stories.\nChallenge 01 Reduce Food Waste\nOlivia: My birthday was last Saturday, and my family and I ate out. There were lots of leftovers, but we brought them home. The next day, I made a nice lunch out of them. FYI, you can find great cooking ideas for leftovers on the Internet.\n\n[문장] Olivia brought the leftovers home and made a nice dinner out of them.",
   "choices": [],
-  "answer": "",
+  "answer": "dinner → lunch",
   "note": "답안 형식: ________ -> ________"
  },
  {
@@ -2276,7 +2296,7 @@ registerExam(6, [
    "Did Olivia's family bring leftovers home?",
    "What did Olivia make out of leftovers?"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2293,7 +2313,7 @@ registerExam(6, [
    "Say No to Single-Use Plastic",
    "Plastic Never Goes Away!"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2310,7 +2330,7 @@ registerExam(6, [
    "For example",
    "In addition"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2327,7 +2347,7 @@ registerExam(6, [
    "throwaway, complete, good",
    "reusable, completely, bad"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2344,7 +2364,7 @@ registerExam(6, [
    "Emma heard plastic goes away easily.",
    "Emma didn't use any single-use plastic today."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2361,7 +2381,7 @@ registerExam(6, [
    "by",
    "for"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2378,7 +2398,7 @@ registerExam(6, [
    "The writer wore the sneakers often.",
    "The size of the sneakers is 250 mm, and the color is red."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2395,7 +2415,7 @@ registerExam(6, [
    "reduce - decrease",
    "hungry - full"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2412,7 +2432,7 @@ registerExam(6, [
    "machine",
    "pollution"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2429,7 +2449,7 @@ registerExam(6, [
    "reusing",
    "away"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2446,7 +2466,7 @@ registerExam(6, [
    "May I help you?",
    "Can I ask you a favor?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2457,7 +2477,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말을 주어진 단어를 포함하여 6단어의 영어로 쓰시오.",
   "passage": "W: Excuse me, but (A)문 좀 닫아 주실 수 있나요? (B)에어컨이 켜져 있어서요.\nB: Oh, I didn't know that. I'll close it right away.\nW: Thanks.",
   "choices": [],
-  "answer": "",
+  "answer": "Will you please close the door?",
   "note": "주어진 단어: will / 답안 형식: -> ________________________ (will)"
  },
  {
@@ -2468,7 +2488,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (B)의 우리말에 맞게 빈칸에 알맞은 단어를 쓰시오.",
   "passage": "W: Excuse me, but (A)문 좀 닫아 주실 수 있나요? (B)에어컨이 켜져 있어서요.\nB: Oh, I didn't know that. I'll close it right away.\nW: Thanks.",
   "choices": [],
-  "answer": "",
+  "answer": "The air conditioner is on.",
   "note": "답안 형식: The __________ __________ is __________."
  },
  {
@@ -2485,7 +2505,7 @@ registerExam(6, [
    "문을 닫고 에어컨을 켠다.",
    "문을 닫는다."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2502,7 +2522,7 @@ registerExam(6, [
    "How ________ I get to the station?",
    "________ you give me a hand?"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2513,7 +2533,7 @@ registerExam(6, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말을 주어진 단어를 포함하여 10단어의 영어로 쓰시오.",
   "passage": "G: I'm so hungry, but there's no food at home.\nB: I know. Let's eat out.\nG: (A)미안하지만, 나는 지금 나가고 싶지 않아. Can you please go to a restaurant and pick up some food?\nB: Sure. No problem.",
   "choices": [],
-  "answer": "",
+  "answer": "I'm sorry, but I don't want to go out now.",
   "note": "주어진 단어: sorry / go out"
  },
  {
@@ -2535,7 +2555,7 @@ registerExam(6, [
   "prompt": "괄호 ⓐ, ⓑ안의 단어를 어법상 알맞은 형태로 바르게 쓰시오.",
   "passage": "I like watching paintings, and I'm interested in ⓐ(paint). I want ⓑ(be) a famous painter in the future.",
   "choices": [],
-  "answer": "",
+  "answer": "1. painting 2. to be",
   "note": "답안 형식: -> ⓐ __________ ⓑ __________"
  },
  {
@@ -2552,7 +2572,7 @@ registerExam(6, [
    "Don't you think this it's cool?",
    "Because you don't think that's cool?"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2569,7 +2589,7 @@ registerExam(6, [
    "I decided to clean the room.",
    "He hoped to explore the deep sea."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2586,7 +2606,7 @@ registerExam(6, [
    "That is our physical education teacher.",
    "I hope that she will be back soon."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2603,7 +2623,7 @@ registerExam(6, [
    "ⓒ, ⓓ",
    "ⓒ, ⓔ"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2620,7 +2640,7 @@ registerExam(6, [
    "ⓑ, ⓒ",
    "ⓑ, ⓒ, ⓔ"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2631,7 +2651,7 @@ registerExam(6, [
   "prompt": "위 글의 빈칸 ⓐ에 save를 알맞은 형태로 쓰시오.",
   "passage": "Every day, we produce lots of waste, and the Earth is getting sicker and sicker. Do you want ⓐ________ the Earth? Then, join the zero-waste challenge, and share your stories.\nChallenge 01 Reduce Food Waste\nOlivia: ①My birthday was last Saturday, and my family and I ate out. ②There were lots of leftovers, but we brought them home. ③There were many people in the restaurant. ④The next day, I made a nice lunch out of them. ⑤FYI, you can find great cooking ideas for leftovers on the Internet.",
   "choices": [],
-  "answer": "",
+  "answer": "to save",
   "note": ""
  },
  {
@@ -2642,8 +2662,11 @@ registerExam(6, [
   "prompt": "다음 질문에 대한 알맞은 대답을 빈칸에 쓰시오.",
   "passage": "Every day, we produce lots of waste, and the Earth is getting sicker and sicker. Do you want ⓐ________ the Earth? Then, join the zero-waste challenge, and share your stories.\nChallenge 01 Reduce Food Waste\nOlivia: ①My birthday was last Saturday, and my family and I ate out. ②There were lots of leftovers, but we brought them home. ③There were many people in the restaurant. ④The next day, I made a nice lunch out of them. ⑤FYI, you can find great cooking ideas for leftovers on the Internet.\n\nQ: Why is the Earth getting sicker and sicker?\nA: Because ________________________.",
   "choices": [],
-  "answer": "",
-  "note": "답안 형식: -> (Because) ________________________."
+  "answer": "we produce lots of waste",
+  "note": "답안 형식: -> (Because) ________________________.",
+  "alt": [
+   "we produce a lot of waste every day"
+  ]
  },
  {
   "page": 76,
@@ -2659,7 +2682,7 @@ registerExam(6, [
    "④",
    "⑤"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2676,7 +2699,7 @@ registerExam(6, [
    "recycling, that, Do",
    "reform, those, Don't"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2693,7 +2716,7 @@ registerExam(6, [
    "how to use the points",
    "some points and real money"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2710,7 +2733,7 @@ registerExam(6, [
    "She ran like the wind.",
    "How did you like the book?"
   ],
-  "answer": "",
+  "answer": "①, ③, ④",
   "note": ""
  },
  {
@@ -2744,7 +2767,7 @@ registerExam(6, [
    "essay",
    "certificate"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2755,7 +2778,7 @@ registerExam(6, [
   "prompt": "주어진 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오.",
   "passage": "[EARTH SAVER 배지]\nName: Emma\nChallenge: Say No to Single-Use Plastic\nYou walked to a restaurant with a reusable container and picked up the food.\nThank you for ⓐjoining the zero-waste challenge.\nGreen Middle School [직인 이미지]\n\na task or situation that tests someone's abilities",
   "choices": [],
-  "answer": "",
+  "answer": "challenge",
   "note": ""
  },
  {
@@ -2788,7 +2811,7 @@ registerExam(6, [
   "prompt": "다음 내용을 바탕으로 무료 나눔을 하고 싶은 물건을 설명하는 글을 완성하시오.",
   "passage": "What: sneakers\nWhen and where did you get them?: I bought them at an online shop last year.\nWhy do you want to give them away?: They were a little small for me, so I didn't wear them often.\nWhat's the size or color?: The size is 250 mm, and the color is red.\nMore information: I think they look good with all clothes.\n\nFree Sneakers\nI want to give away my ________________. I bought them ________________________. They were ________________________, so I didn't wear them often. The size is ________________, and the color is ________________. I think they ________________________.",
   "choices": [],
-  "answer": "",
+  "answer": "1. sneakers 2. at an online shop last year 3. a little small for me 4. 250 mm / red 5. look good with all clothes",
   "note": ""
  },
  {
@@ -2799,7 +2822,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 알맞은 말을 쓰시오.",
   "passage": "A: Can you please fix my bike?\nB: Sure. No problem. / I'm ________, but I can't.",
   "choices": [],
-  "answer": "",
+  "answer": "sorry",
   "note": ""
  },
  {
@@ -2810,7 +2833,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 알맞은 말을 쓰시오.",
   "passage": "I'm sorry, but I ________. I'm busy now.",
   "choices": [],
-  "answer": "",
+  "answer": "can't",
   "note": ""
  },
  {
@@ -2821,7 +2844,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "FYI, you can find great cooking ideas ________ leftovers ________ the Internet.",
   "choices": [],
-  "answer": "",
+  "answer": "1. for 2. on",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2832,7 +2855,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "________, I walked to my favorite restaurant ________ a reusable container and picked ________ the food.",
   "choices": [],
-  "answer": "",
+  "answer": "1. Instead 2. with 3. up",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2843,7 +2866,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I want to give ________ my earphones.",
   "choices": [],
-  "answer": "",
+  "answer": "away",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2854,7 +2877,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "Do you want to ________ the Earth?",
   "choices": [],
-  "answer": "",
+  "answer": "save",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2865,7 +2888,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "Every day, we ________ lots of waste, and the Earth is ________ sicker ________ sicker.",
   "choices": [],
-  "answer": "",
+  "answer": "1. produce 2. getting 3. and",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2876,7 +2899,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "My birthday was last Saturday, and my family and I ate ________.",
   "choices": [],
-  "answer": "",
+  "answer": "out",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2887,7 +2910,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I heard that plastic never goes ________ completely.",
   "choices": [],
-  "answer": "",
+  "answer": "away",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2920,7 +2943,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "Yesterday, I ________ some plastic and glass bottles ________ a recycling machine ________ my house.",
   "choices": [],
-  "answer": "",
+  "answer": "1. took 2. to 3. near",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2931,7 +2954,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I'm not very good ________ sewing, and I don't think that the bag looks perfect.",
   "choices": [],
-  "answer": "",
+  "answer": "at",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2942,7 +2965,7 @@ registerExam(6, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I put them ________ the machine one ________ one, and I got some points ________ return.",
   "choices": [],
-  "answer": "",
+  "answer": "1. into 2. by 3. in",
   "note": "보기: save, take, produce, get, and, on, up, in, off, instead, out, by, into, near, away, with, for, at, to (빈칸 하나에 한 단어이며 필요한 경우 변형할 것. 대소문자 무시.)"
  },
  {
@@ -2956,7 +2979,7 @@ registerExam(6, [
    "to save",
    "saving"
   ],
-  "answer": "",
+  "answer": "to save",
   "note": ""
  },
  {
@@ -2972,7 +2995,7 @@ registerExam(6, [
    "fixing / reuse",
    "fixing / reusing"
   ],
-  "answer": "",
+  "answer": "to fix / reuse",
   "note": "괄호가 두 개(동사 fix, reuse)이므로 각각 골라야 함"
  },
  {
@@ -2986,7 +3009,7 @@ registerExam(6, [
    "to see",
    "seeing"
   ],
-  "answer": "",
+  "answer": "to see",
   "note": ""
  },
  {
@@ -3002,7 +3025,7 @@ registerExam(6, [
    "going / to camp",
    "going / camping"
   ],
-  "answer": "",
+  "answer": "to go / camping",
   "note": "괄호가 두 개(동사 go, camp)이므로 각각 골라야 함"
  },
  {
@@ -3016,7 +3039,7 @@ registerExam(6, [
    "to buy",
    "buying"
   ],
-  "answer": "",
+  "answer": "to buy",
   "note": ""
  },
  {
@@ -3030,7 +3053,7 @@ registerExam(6, [
    "that",
    "when"
   ],
-  "answer": "",
+  "answer": "that",
   "note": ""
  },
  {
@@ -3044,7 +3067,7 @@ registerExam(6, [
    "that",
    "because"
   ],
-  "answer": "",
+  "answer": "that",
   "note": ""
  },
  {
@@ -3058,7 +3081,7 @@ registerExam(6, [
    "if",
    "that"
   ],
-  "answer": "",
+  "answer": "that",
   "note": ""
  },
  {
@@ -3069,8 +3092,11 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "Can you please close the door?\n= ________ you please close the door?\n= ________ you please close the door?\n= Can I ________ you ________ ________ the door?",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "1. Will 2. Would 3. ask 4. to 5. close",
+  "note": "",
+  "alt": [
+   "2. Could"
+  ]
  },
  {
   "page": 80,
@@ -3080,8 +3106,11 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "(I'm) Sorry, but I can't.\n= I'm ________, I can't.\n= ________ ________ ________, but I can't.\n= I don't think I ________ ________ that.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "1. afraid 2. I'd love to 3. can do",
+  "note": "",
+  "alt": [
+   "2. I'd like to"
+  ]
  },
  {
   "page": 80,
@@ -3091,7 +3120,7 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "Sure.\n= ________ ________.\n= ________.\n= ________.\n= ________ ________[, I can].\n= ________.\n= ________ pleasure.\n= Why ________?",
   "choices": [],
-  "answer": "",
+  "answer": "1. No problem 2. Okay 3. Absolutely 4. Of course 5. Certainly 6. With 7. not",
   "note": ""
  },
  {
@@ -3102,7 +3131,7 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "I don't need my old earphones anymore.\n= I don't need my old earphones ________ ________.\n= I don't need my old earphones ________ ________.\n= I ________ ________ need my old earphones.\n= I ________ ________ need my old earphones.",
   "choices": [],
-  "answer": "",
+  "answer": "1. any more 2. any longer 3. no more 4. no longer",
   "note": ""
  },
  {
@@ -3113,7 +3142,7 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "I'm not very good at sewing\n= I ________ sew very ________.",
   "choices": [],
-  "answer": "",
+  "answer": "1. can't 2. well",
   "note": ""
  },
  {
@@ -3124,7 +3153,7 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "There's no food at home.\n= We ________ ________ ________ food at home.",
   "choices": [],
-  "answer": "",
+  "answer": "don't have any",
   "note": ""
  },
  {
@@ -3135,8 +3164,11 @@ registerExam(6, [
   "prompt": "다음 문장이 같은 의미가 되도록 빈칸에 알맞은 말을 쓰시오.",
   "passage": "Let's eat out.\n= ________ about eating out?\n= ________ ________ eat out?\n= ________ ________ ________ eat out?",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "1. How 2. Shall we 3. Why don't we",
+  "note": "",
+  "alt": [
+   "1. What"
+  ]
  },
  {
   "page": 160,
@@ -3146,7 +3178,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "매일 우리는 많은 쓰레기를 만들고, 지구는 점점 더 병들고 있습니다.",
   "choices": [],
-  "answer": "",
+  "answer": "Every day, we produce lots of waste, and the Earth is getting sicker and sicker.",
   "note": ""
  },
  {
@@ -3157,7 +3189,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "여러분은 지구를 구하고 싶나요?",
   "choices": [],
-  "answer": "",
+  "answer": "Do you want to save the Earth?",
   "note": ""
  },
  {
@@ -3168,7 +3200,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그렇다면 제로 웨이스트 챌린지에 동참하고 여러분의 이야기를 공유해 주세요.",
   "choices": [],
-  "answer": "",
+  "answer": "Then, join the zero-waste challenge, and share your stories.",
   "note": ""
  },
  {
@@ -3179,7 +3211,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "챌린지 01 음식물 쓰레기를 줄이세요",
   "choices": [],
-  "answer": "",
+  "answer": "Challenge 01 Reduce Food Waste",
   "note": ""
  },
  {
@@ -3190,7 +3222,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Olivia: 내 생일은 지난 토요일이었고, 가족들과 나는 외식을 했어.",
   "choices": [],
-  "answer": "",
+  "answer": "My birthday was last Saturday, and my family and I ate out.",
   "note": ""
  },
  {
@@ -3201,7 +3233,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "남은 음식이 많아서 우리는 그것들을 집으로 가져왔어.",
   "choices": [],
-  "answer": "",
+  "answer": "There were lots of leftovers, but we brought them home.",
   "note": ""
  },
  {
@@ -3212,7 +3244,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그다음 날, 나는 그것들로 맛있는 점심을 만들었어.",
   "choices": [],
-  "answer": "",
+  "answer": "The next day, I made a nice lunch out of them.",
   "note": ""
  },
  {
@@ -3223,7 +3255,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "참고로, 인터넷에서 남은 음식을 위한 멋진 요리 아이디어를 찾을 수 있어.",
   "choices": [],
-  "answer": "",
+  "answer": "FYI, you can find great cooking ideas for leftovers on the Internet.",
   "note": ""
  },
  {
@@ -3234,7 +3266,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "챌린지 02 재사용하세요",
   "choices": [],
-  "answer": "",
+  "answer": "Challenge 02 Reuse",
   "note": ""
  },
  {
@@ -3245,7 +3277,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Domingo: 내 개가 내 가방을 찢었어.",
   "choices": [],
-  "answer": "",
+  "answer": "My dog tore my bag.",
   "note": ""
  },
  {
@@ -3256,7 +3288,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "나는 새것을 사고 싶었지만, 다시 생각해 봤어.",
   "choices": [],
-  "answer": "",
+  "answer": "I wanted to buy a new one, but I thought again.",
   "note": ""
  },
  {
@@ -3267,7 +3299,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "나는 재사용이 제로 웨이스트 생활에 중요하다고 배웠어.",
   "choices": [],
-  "answer": "",
+  "answer": "I learned that reusing is important for zero-waste living.",
   "note": ""
  },
  {
@@ -3278,7 +3310,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그래서 나는 그것을 수선해서 재사용하기로 결심했어.",
   "choices": [],
-  "answer": "",
+  "answer": "So, I decided to fix it and reuse it.",
   "note": ""
  },
  {
@@ -3289,7 +3321,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "나는 바느질을 아주 잘하지 못하고, 가방이 완벽해 보인다고 생각하진 않아.",
   "choices": [],
-  "answer": "",
+  "answer": "I'm not very good at sewing, and I don't think that the bag looks perfect.",
   "note": ""
  },
  {
@@ -3300,7 +3332,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그래도 괜찮은 것 같아.",
   "choices": [],
-  "answer": "",
+  "answer": "I guess it's all right.",
   "note": ""
  },
  {
@@ -3311,7 +3343,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "챌린지 03 일회용 플라스틱 사용에 반대하세요",
   "choices": [],
-  "answer": "",
+  "answer": "Challenge 03 Say No to Single-Use Plastic",
   "note": ""
  },
  {
@@ -3322,7 +3354,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Emma: 나는 종종 음식 배달 서비스를 이용하는데, 오늘은 이용하지 않았어.",
   "choices": [],
-  "answer": "",
+  "answer": "I often use food delivery services, but today I didn't.",
   "note": ""
  },
  {
@@ -3333,7 +3365,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "대신, 재사용할 수 있는 용기를 가지고 내가 가장 좋아하는 식당에 걸어가서 음식을 가져왔어.",
   "choices": [],
-  "answer": "",
+  "answer": "Instead, I walked to my favorite restaurant with a reusable container and picked up the food.",
   "note": ""
  },
  {
@@ -3344,7 +3376,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "플라스틱은 절대로 완전히 없어지지 않는다고 들었어.",
   "choices": [],
-  "answer": "",
+  "answer": "I heard that plastic never goes away completely.",
   "note": ""
  },
  {
@@ -3355,7 +3387,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "나는 오늘 어떤 일회용 플라스틱도 사용하지 않았어.",
   "choices": [],
-  "answer": "",
+  "answer": "I didn't use any single-use plastic today.",
   "note": ""
  },
  {
@@ -3366,7 +3398,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "기분이 좋았어!",
   "choices": [],
-  "answer": "",
+  "answer": "I felt good!",
   "note": ""
  },
  {
@@ -3377,7 +3409,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "챌린지 04 재활용하세요",
   "choices": [],
-  "answer": "",
+  "answer": "Challenge 04 Recycle",
   "note": ""
  },
  {
@@ -3388,7 +3420,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "민수: 어제 나는 플라스틱과 유리병 몇 개를 집 근처에 있는 재활용 기계에 가져갔어.",
   "choices": [],
-  "answer": "",
+  "answer": "Yesterday, I took some plastic and glass bottles to a recycling machine near my house.",
   "note": ""
  },
  {
@@ -3399,7 +3431,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "나는 그것들을 하나씩 기계에 집어넣었고, 대가로 포인트를 받았어.",
   "choices": [],
-  "answer": "",
+  "answer": "I put them into the machine one by one, and I got some points in return.",
   "note": ""
  },
  {
@@ -3410,7 +3442,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그 포인트로 무엇을 할 수 있냐고?",
   "choices": [],
-  "answer": "",
+  "answer": "What can I do with those points?",
   "note": ""
  },
  {
@@ -3421,7 +3453,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "음, 나는 그것들을 돈처럼 사용할 수 있어.",
   "choices": [],
-  "answer": "",
+  "answer": "Well, I can use them like money.",
   "note": ""
  },
  {
@@ -3432,7 +3464,7 @@ registerExam(6, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "멋지다고 생각하지 않니?",
   "choices": [],
-  "answer": "",
+  "answer": "Don't you think that's cool?",
   "note": ""
  }
 ]);

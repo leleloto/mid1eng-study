@@ -446,6 +446,12 @@ VIEWS.recall = {
   }
 };
 
+/* 복수 정답 비교 — 고른 순서는 안 따지고 집합으로 봄 */
+function sameSet(picked, answer){
+  const want = answer.split(/[,·\s]+/).filter(Boolean).sort().join();
+  return picked.length > 0 && picked.slice().sort().join() === want;
+}
+
 /* 채점용 정규화 — 대소문자·구두점·중복 공백 무시 */
 const norm = s => s.toLowerCase().replace(/[.,!?;:'"’‘“”]/g, "").replace(/\s+/g, " ").trim();
 
@@ -513,25 +519,29 @@ VIEWS.exam = {
       const items = bySec.get(sec);
       list.innerHTML = items.map((q, i) => {
         const gradable = !!q.answer;
+        /* "모두 고르시오"·"정답 2개"는 답이 둘 이상이라 라디오로는 못 풂 */
+        const multi = /모두 고르|정답 \d개|두 개|2개/.test(q.prompt) || /,/.test(q.answer || "");
         const body = q.type === "choice" && q.choices.length
           ? `<div class="choices">${q.choices.map((c, j) =>
-              `<label class="ch"><input type="radio" name="q${i}" value="${CIRCLED[j]}">
+              `<label class="ch"><input type="${multi ? "checkbox" : "radio"}" name="q${i}" value="${CIRCLED[j]}">
                  <span class="chn">${CIRCLED[j]}</span><span>${esc(c)}</span></label>`).join("")}</div>`
           : `<input type="text" class="exin" placeholder="답을 쓰세요">`;
-        return `<div class="card exq" data-i="${i}" data-ans="${esc(q.answer || "")}" data-type="${q.type}">
+        return `<div class="card exq" data-i="${i}" data-ans="${esc(q.answer || "")}" data-type="${q.type}"${multi ? " data-multi" : ""}>
           <div class="exhead">
             <span class="exno">${esc(q.no)}</span>
-            <span class="exprompt">${esc(q.prompt)}</span>
-            ${gradable ? "" : `<span class="nograde" title="해설 책자가 따로 있어 정답이 없음">정답 없음</span>`}
+            <span class="exprompt">${esc(q.prompt)}${multi ? ` <span class="multi">복수 정답</span>` : ""}</span>
+            ${gradable ? "" : `<span class="nograde" title="정답을 확정하지 못한 문항">정답 없음</span>`}
           </div>
           ${q.passage ? `<pre class="expass">${esc(q.passage)}</pre>` : ""}
           ${q.note ? `<p class="exnote">※ ${esc(q.note)}</p>` : ""}
           ${body}
           <div class="exout"></div>
         </div>`;
-      }).join("");
+      }).join("")
+      /* 문항이 많아 맨 위 채점 버튼까지 되돌아가기 번거로움 */
+      + `<div class="bar" style="justify-content:center"><button class="btn pri" data-check>채점</button></div>`;
       root.querySelector("#exCnt").textContent = "";
-      root.querySelector("#exCheck").disabled = false;
+      root.querySelectorAll("[id=exCheck],[data-check]").forEach(b => b.disabled = false);
     };
 
     root.querySelector("#secBar").onclick = e => {
@@ -540,23 +550,27 @@ VIEWS.exam = {
       drawSection(b.dataset.sec);
     };
 
-    root.querySelector("#exCheck").onclick = e => {
-      let ok = 0, total = 0;
+    const grade = () => {
+      let ok = 0, total = 0, firstWrong = null;
       list.querySelectorAll(".exq").forEach(card => {
         const ans = card.dataset.ans;
         const out = card.querySelector(".exout");
         if (!ans){ out.innerHTML = `<div class="exres dim">정답 미제공 — 해설 책자 확인 필요</div>`; return; }
         total++;
-        const picked = card.querySelector("input[type=radio]:checked")?.value
-                    ?? card.querySelector(".exin")?.value ?? "";
-        const good = norm(picked) === norm(ans);
-        if (good) ok++;
+        const good = card.hasAttribute("data-multi")
+          ? sameSet([...card.querySelectorAll("input:checked")].map(i => i.value), ans)
+          : norm(card.querySelector("input[type=radio]:checked")?.value
+                 ?? card.querySelector(".exin")?.value ?? "") === norm(ans);
+        if (good) ok++; else if (!firstWrong) firstWrong = card;
         out.innerHTML = `<div class="exres ${good ? "ok" : "no"}">${good ? "정답" : `오답 — 정답: ${esc(ans)}`}</div>`;
         card.querySelectorAll("input").forEach(i => i.disabled = true);
       });
-      e.target.disabled = true;
+      root.querySelectorAll("[id=exCheck],[data-check]").forEach(b => b.disabled = true);
       root.querySelector("#exCnt").textContent = total ? `채점 ${total}문항 중 ${ok}개 정답` : "채점 가능한 문항 없음";
+      if (firstWrong) firstWrong.scrollIntoView({ block: "center", behavior: "smooth" });
     };
+    root.querySelector("#exCheck").onclick = grade;
+    list.addEventListener("click", e => { if (e.target.closest("[data-check]")) grade(); });
     root.querySelector("#exClear").onclick = () =>
       drawSection(root.querySelector("#secBar .pri").dataset.sec);
 

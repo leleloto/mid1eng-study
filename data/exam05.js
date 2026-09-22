@@ -1,5 +1,6 @@
-/* 5과 기출문제 — 기출 PDF 전사본. 문제 수정은 이 파일에서.
-   answer가 빈 문항은 별책 해설집에만 정답이 있어 채점 대상에서 빠짐. */
+/* 5과 기출문제 — 기출 PDF 전사본.
+   answer가 빈 문항은 정답을 확정하지 못한 것(그림 필요·지문 가려짐 등)이라 채점에서 빠짐.
+   해설집을 구하면 answer만 채워 넣으면 됨. */
 registerExam(5, [
  {
   "page": 8,
@@ -15,7 +16,7 @@ registerExam(5, [
    "Look at that sign. (표지판)",
    "Using the flash can damage paintings. (훼손하다)"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -32,7 +33,7 @@ registerExam(5, [
    "crime",
    "janitor"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -49,7 +50,7 @@ registerExam(5, [
    "bottled",
    "feed"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -60,7 +61,7 @@ registerExam(5, [
   "prompt": "다음 짝지어진 두 단어의 관계가 같도록 빈칸에 주어진 철자로 시작하는 단어를 쓰시오.",
   "passage": "fast : slow = outside : ______\n→ i______",
   "choices": [],
-  "answer": "",
+  "answer": "inside",
   "note": ""
  },
  {
@@ -77,7 +78,7 @@ registerExam(5, [
    "bring",
    "turn"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -88,7 +89,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞게 빈칸에 주어진 단어를 적절한 형태로 바꿔 쓰시오.",
   "passage": "우리는 방문객을 위한 세 가지 규칙이 있습니다. (visit)\n→ We have three rules for ______.",
   "choices": [],
-  "answer": "",
+  "answer": "visitors",
   "note": ""
  },
  {
@@ -116,7 +117,7 @@ registerExam(5, [
    "with – at",
    "with – on"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -133,7 +134,7 @@ registerExam(5, [
    "eat",
    "throw"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -144,7 +145,7 @@ registerExam(5, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "(1) 저는 범죄 현장에 갔는데, 그림 곳곳에 케이크 조각들이 있었어요.\n→ I went to the ______ ______, and there were pieces of cake ______ ______ the painting.\n(2) 우리는 그날 케이크를 딱 한 개 팔았어요. 그래서 그를 똑똑히 기억해요.\n→ We ______ only one cake that day, so I ______ him ______.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) crime scene / all over (2) sold / remember / clearly",
   "note": ""
  },
  {
@@ -161,7 +162,7 @@ registerExam(5, [
    "도움 요청하기",
    "제안하기"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -178,7 +179,7 @@ registerExam(5, [
    "don't eat snacks in class",
    "you don't have to eat snacks in class"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -189,7 +190,7 @@ registerExam(5, [
   "prompt": "다음 ⓐ~ⓒ를 대화의 흐름에 맞게 순서대로 나열하여 쓰시오.",
   "passage": "W: Excuse me, but you must not talk on the phone here.\nⓐ I see. Thank you.\nⓑ I'm terribly sorry. I'll turn off my phone.\nⓒ You don't have to. Texting is OK.",
   "choices": [],
-  "answer": "",
+  "answer": "ⓑ-ⓒ-ⓐ",
   "note": ""
  },
  {
@@ -206,7 +207,7 @@ registerExam(5, [
    "Will",
    "Can"
   ],
-  "answer": "",
+  "answer": "③, ④",
   "note": ""
  },
  {
@@ -217,7 +218,7 @@ registerExam(5, [
   "prompt": "위 대화의 괄호 (A) 안의 단어들을 순서대로 나열하여 쓰시오.",
   "passage": "(A)(the / run / museum / must / inside / you / not).",
   "choices": [],
-  "answer": "",
+  "answer": "You must not run inside the museum.",
   "note": ""
  },
  {
@@ -251,7 +252,7 @@ registerExam(5, [
    "need",
    "have"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -268,7 +269,7 @@ registerExam(5, [
    "Do you mind if I touch this golden bear?",
    "Can I touch this golden bear?"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -285,7 +286,7 @@ registerExam(5, [
    "I'm sorry, but you can't.",
    "No, I don't mind."
   ],
-  "answer": "",
+  "answer": "③, ⑤",
   "note": ""
  },
  {
@@ -302,7 +303,7 @@ registerExam(5, [
    "may – must",
    "may – need"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -313,7 +314,7 @@ registerExam(5, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말에 맞게 주어진 단어를 포함하여 7단어의 영어로 쓰시오.",
   "passage": "(A) 사진을 찍어도 될까요?\n→ ______________________ (picture)",
   "choices": [],
-  "answer": "",
+  "answer": "May I take a picture of it?",
   "note": ""
  },
  {
@@ -330,7 +331,7 @@ registerExam(5, [
    "사진을 찍을 때 플래시를 사용하는 것은 그림을 훼손시킬 수 있다.",
    "다음으로 볼 그림은 모네의 그림이다."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -347,7 +348,7 @@ registerExam(5, [
    "were",
    "does"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -364,7 +365,7 @@ registerExam(5, [
    "apples",
    "money"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -381,7 +382,7 @@ registerExam(5, [
    "heavy – heavier",
    "much – most"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -398,7 +399,7 @@ registerExam(5, [
    "more difficult",
    "hardest"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -415,7 +416,7 @@ registerExam(5, [
    "were",
    "weren't"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -432,7 +433,7 @@ registerExam(5, [
    "worse",
    "more expensive"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -449,7 +450,7 @@ registerExam(5, [
    "better",
    "more good"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -466,7 +467,7 @@ registerExam(5, [
    "There are some mistakes in the report.",
    "There were thirty questions on the test."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -483,7 +484,7 @@ registerExam(5, [
    "Bananas are the more cheap of all fruits.",
    "Bananas are the most cheap of all fruits."
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -500,7 +501,7 @@ registerExam(5, [
    "There wasn't an empty seat on the bus yesterday.",
    "There weren't an empty seat on the bus yesterday."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -517,7 +518,7 @@ registerExam(5, [
    "4",
    "5"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": "선택지가 밑줄 번호(①~⑤)임"
  },
  {
@@ -534,7 +535,7 @@ registerExam(5, [
    "We went to Seoul and stayed there.",
    "Are there many cups on the shelf?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -545,7 +546,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 대화의 빈칸에 들어갈 적절한 말을 쓰시오.",
   "passage": "A: ______ ______ a bag on the desk?\n책상 위에 가방이 한 개 있니?\nB: No, there ______.\n아니, 없어.",
   "choices": [],
-  "answer": "",
+  "answer": "Is there / isn't",
   "note": ""
  },
  {
@@ -562,7 +563,7 @@ registerExam(5, [
    "I will try to ride a bike more safely next time.",
    "I will try to ride a bike the more safe next time."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -579,7 +580,7 @@ registerExam(5, [
    "This phone is thiner than that one.",
    "Carlos is the most intelligent person."
   ],
-  "answer": "",
+  "answer": "①, ④",
   "note": ""
  },
  {
@@ -596,7 +597,7 @@ registerExam(5, [
    "much money",
    "a lot of sugar"
   ],
-  "answer": "",
+  "answer": "④, ⑤",
   "note": ""
  },
  {
@@ -613,7 +614,7 @@ registerExam(5, [
    "two",
    "girl"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -630,7 +631,7 @@ registerExam(5, [
    "There is a lot of children in the park.",
    "Are there any other problems?"
   ],
-  "answer": "",
+  "answer": "①, ④",
   "note": ""
  },
  {
@@ -647,7 +648,7 @@ registerExam(5, [
    "Rex is the tallest of the four robots.",
    "The coffee was best than the soda."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -664,7 +665,7 @@ registerExam(5, [
    "Are – isn't – is",
    "Are – aren't – are"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -675,7 +676,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 괄호 안의 단어들을 순서대로 바르게 배열하시오. (필요시 어형을 바꿀 것.)",
   "passage": "이 근처에서 가장 가까운 경찰서가 어디에 있나요?\n(is / here / the / where / police station / around / near / ?)",
   "choices": [],
-  "answer": "",
+  "answer": "Where is the nearest police station around here?",
   "note": ""
  },
  {
@@ -686,7 +687,7 @@ registerExam(5, [
   "prompt": "다음 괄호 안에 주어진 단어를 이용하여 질문에 대한 대답을 9단어의 문장으로 쓰시오.",
   "passage": "A: How many cake boxes are there next to the wheelchair?\nB: ______________________\n(there / four / next to the wheelchair)",
   "choices": [],
-  "answer": "",
+  "answer": "There are four cake boxes next to the wheelchair.",
   "note": ""
  },
  {
@@ -703,7 +704,7 @@ registerExam(5, [
    "hard – faster",
    "hardly – more fast"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -720,7 +721,7 @@ registerExam(5, [
    "of – for",
    "with – for"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -737,7 +738,7 @@ registerExam(5, [
    "Carlos's wig fell off his head.",
    "In fact, the old man was a young man with long brown hair."
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -754,7 +755,7 @@ registerExam(5, [
    "I remember saying so.",
    "I heard him playing the piano."
   ],
-  "answer": "",
+  "answer": "②, ⑤",
   "note": ""
  },
  {
@@ -771,7 +772,7 @@ registerExam(5, [
    "lawyer",
    "guard"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -788,7 +789,7 @@ registerExam(5, [
    "목격자들의 진술을 바탕으로 범인이 누구인지 추론하는 내용",
    "목격자들을 찾는 법"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -805,7 +806,7 @@ registerExam(5, [
    "4",
    "5"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -816,7 +817,7 @@ registerExam(5, [
   "prompt": "위 글의 두 목격자들의 진술로 알 수 있는 범인에 대한 정보를 빈칸에 우리말로 쓰시오.",
   "passage": "Diego Perez의 진술로 알 수 있는 것:\n(1) ______\nCamila Santos의 진술로 알 수 있는 것:\n(2) ______\n(3) ______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) 케이크 상자가 Camila's Bakery 것임 (2) 범인은 스페인어 못 알아듣고 영어만 함 (3) 범인은 파란 눈임",
   "note": ""
  },
  {
@@ -833,7 +834,7 @@ registerExam(5, [
    "speaking in Spanish, not in English",
    "to try to find the criminal with clues left at the crime scene"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -844,7 +845,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ에 find를 알맞은 형태로 쓰시오.",
   "passage": "Hello, I'm Park Jinho from Evening News. Last Saturday, a man threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. The man is a little taller than 170 cm. He has brown hair and blue eyes, and speaks only English. There were four suspects, and the police ⓐ______ the criminal. The criminal is Larry Johnson.",
   "choices": [],
-  "answer": "",
+  "answer": "found",
   "note": ""
  },
  {
@@ -861,7 +862,7 @@ registerExam(5, [
    "news script",
    "diary"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -872,7 +873,7 @@ registerExam(5, [
   "prompt": "주어진 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오.",
   "passage": "a person who is guilty of a crime",
   "choices": [],
-  "answer": "",
+  "answer": "criminal",
   "note": ""
  },
  {
@@ -883,7 +884,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ에 들어갈 알맞은 단어를 쓰시오.",
   "passage": "Now, look at the information about the suspects. Ⓐ누가 Monalisa에게 케이크를 던졌을까?\n\nThe ⓐ______\n[표: Andres Lozano / Larry Johnson / Tim Baker / Luca Ferez의 Height, Hair, Languages, Eyes 정보]\nAndres Lozano - Height: 176 cm, Hair: long black, Languages: Spanish, English, Eyes: brown\nLarry Johnson - Height: 173 cm, Hair: long brown, Languages: English, Eyes: blue\nTim Baker - Height: 182 cm, Hair: long brown, Languages: English, Eyes: green\nLuca Ferez - Height: 166 cm, Hair: short gray, Languages: Spanish, Eyes: blue",
   "choices": [],
-  "answer": "",
+  "answer": "Suspects",
   "note": "표 필요"
  },
  {
@@ -894,7 +895,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓐ의 우리말에 맞게 7단어로 영작하시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "Who threw the cake at the Monalisa?",
   "note": ""
  },
  {
@@ -911,7 +912,7 @@ registerExam(5, [
    "Who has the longest hair of the four?",
    "Who is the tallest of the four?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "표 필요"
  },
  {
@@ -928,7 +929,7 @@ registerExam(5, [
    "Q: Based on eye color, who isn't the criminal?\nA: Tim.",
    "Q: Based on hair color, who isn't the criminal?\nA: Steve."
   ],
-  "answer": "",
+  "answer": "①",
   "note": "그림 필요(용의자 4인 삽화)"
  },
  {
@@ -945,7 +946,7 @@ registerExam(5, [
    "For example",
    "Therefore"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -962,7 +963,7 @@ registerExam(5, [
    "4",
    "5"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "선택지가 밑줄 번호(①~⑤)임"
  },
  {
@@ -973,7 +974,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓐ의 우리말에 맞게 7단어로 영작하시오.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "He was a little taller than me.",
   "note": ""
  },
  {
@@ -990,7 +991,7 @@ registerExam(5, [
    "What fell off the old man's head?",
    "Who was faster, Carlos Diaz or the criminal?"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1007,7 +1008,7 @@ registerExam(5, [
    "review",
    "eyewitness statement"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1024,7 +1025,7 @@ registerExam(5, [
    "What did Diego find next to the wheelchair?",
    "What did the criminal buy?"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1035,7 +1036,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ와 ⓑ에 공통으로 들어갈 알맞은 전치사를 쓰시오.",
   "passage": "Ann Jones, a visitor\nI was looking ⓐ______ the Monalisa, and someone threw a cake ⓑ______ the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm about 170 cm tall, and he was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was ⓒrunning away, and something fell off his head. It was his wig. I ran after him, but I couldn't catch him. He was faster than me. In fact, the old man was not old. He was a young man with long brown hair.",
   "choices": [],
-  "answer": "",
+  "answer": "at",
   "note": ""
  },
  {
@@ -1052,7 +1053,7 @@ registerExam(5, [
    "4개",
    "5개"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1063,7 +1064,7 @@ registerExam(5, [
   "prompt": "주어진 영영풀이에 해당하는 단어를 본문에서 찾아 쓰시오.",
   "passage": "artificial hair that you wear on your head",
   "choices": [],
-  "answer": "",
+  "answer": "wig",
   "note": ""
  },
  {
@@ -1074,7 +1075,7 @@ registerExam(5, [
   "prompt": "다음 질문에 대한 알맞은 대답을 빈칸에 쓰시오. (9단어)",
   "passage": "Diego Perez, a guard\nI went to the crime scene, and there were pieces of cake all over the painting. There was also a wheelchair near the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in Spanish, but he didn't understand me. He spoke only English. We had ⓐa lot of different cakes, but he just wanted the smallest one. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.\n\nQ: What did Diego find next to the wheelchair?\nA: ______.",
   "choices": [],
-  "answer": "",
+  "answer": "He found a cake box next to the wheelchair.",
   "note": ""
  },
  {
@@ -1091,7 +1092,7 @@ registerExam(5, [
    "much",
    "lots of"
   ],
-  "answer": "",
+  "answer": "①, ③, ⑤",
   "note": ""
  },
  {
@@ -1102,7 +1103,7 @@ registerExam(5, [
   "prompt": "다음 질문에 대한 알맞은 대답을 빈칸에 쓰시오. (5단어)",
   "passage": "Q: What did a young man want at Camila's Bakery?\nA: ______.",
   "choices": [],
-  "answer": "",
+  "answer": "He wanted the smallest cake.",
   "note": ""
  },
  {
@@ -1119,7 +1120,7 @@ registerExam(5, [
    "Read the following, and find the criminal. (범죄)",
    "Then, explain the rule to each person. (규칙)"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1136,7 +1137,7 @@ registerExam(5, [
    "throw: to send something from your hand through the air",
    "information: facts or details about somebody/something"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1147,7 +1148,7 @@ registerExam(5, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.",
   "passage": "회색 머리의 한 노인이 도망가고 있었고, 그의 머리에서 뭔가가 떨어졌어요.\n→ An old man with gray hair was ______ ______, and something ______ ______ his head.",
   "choices": [],
-  "answer": "",
+  "answer": "running away / fell off",
   "note": ""
  },
  {
@@ -1164,7 +1165,7 @@ registerExam(5, [
    "terribly",
    "really"
   ],
-  "answer": "",
+  "answer": "①, ③",
   "note": ""
  },
  {
@@ -1175,7 +1176,7 @@ registerExam(5, [
   "prompt": "위 대화의 괄호 (A) 안의 단어들을 순서대로 나열하여 쓰시오.",
   "passage": "(A)(phone / must / on / here / you / me / the / talk / , / not / excuse / but).",
   "choices": [],
-  "answer": "",
+  "answer": "Excuse me, but you must not talk on the phone here.",
   "note": ""
  },
  {
@@ -1192,7 +1193,7 @@ registerExam(5, [
    "You don't need to.",
    "You don't have to."
   ],
-  "answer": "",
+  "answer": "④, ⑤",
   "note": ""
  },
  {
@@ -1209,7 +1210,7 @@ registerExam(5, [
    "Why don't you touch this painting?",
    "Do you mind if I touch this painting?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1226,7 +1227,7 @@ registerExam(5, [
    "I'm sorry, but I mind.",
    "I'm sorry, but you can't."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1237,7 +1238,7 @@ registerExam(5, [
   "prompt": "위 대화의 밑줄 친 (B)와 같은 의미의 문장을 주어진 단어를 활용하여 9단어의 영어로 쓰시오.\n(allow, bring)\n→ ______",
   "passage": "B: May I take food into the museum?\nW: (A)No, you may not. (B)어떤 음식도 실내에 가지고 들어갈 수 없습니다.\nB: How about water?\nW: Only bottled water is OK.",
   "choices": [],
-  "answer": "",
+  "answer": "You are not allowed to bring any food inside.",
   "note": ""
  },
  {
@@ -1254,7 +1255,7 @@ registerExam(5, [
    "There was many photos on the desk.",
    "Andres runs faster than others do."
   ],
-  "answer": "",
+  "answer": "①, ④",
   "note": ""
  },
  {
@@ -1271,7 +1272,7 @@ registerExam(5, [
    "3개",
    "4개"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1282,8 +1283,11 @@ registerExam(5, [
   "prompt": "다음 중 어법상 틀린 두 문장을 찾아 바르게 고쳐 문장을 다시 쓰시오.\n(1) ( )→ ______\n(2) ( )→ ______",
   "passage": "ⓐ There were a lot of money in my pocket.\nⓑ Today is colder than yesterday.\nⓒ On the first floor, there is a living room.\nⓓ Tom is the oldest boy from his school.\nⓔ The film is more exciting than the novel.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "(1) There was a lot of money in my pocket. / (2) Tom is the oldest boy in his school.",
+  "note": "",
+  "alt": [
+   "(2) Tom is the oldest boy of his school."
+  ]
  },
  {
   "page": 22,
@@ -1299,7 +1303,7 @@ registerExam(5, [
    "scene / a piece / clearly",
    "scenery / pieces / clear"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1327,7 +1331,7 @@ registerExam(5, [
    "Where Did the Criminal Buy the Cake?",
    "Why Did Camila Remember Him?"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1349,7 +1353,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 ⓐThis가 가리키는 것을 본문에서 찾아 쓰시오.\n→ ______",
   "passage": "The Suspects\n[그림: 용의자 4명 John, Tim, Steve, Mike 얼굴, 키 눈금 180/170 표시]\nEyewitness Statement\n・Ⓐ taller than 180 cm\n・Ⓑ blue eyes\n・Ⓒ black hair\n\nWho Stole the Gold Rings?\nSomeone stole the gold rings from Mr. Brown's jewelry shop last night. There are four suspects – John, Tim, Steve, and Mike. The criminal is Mike. ⓐThis is for the following reasons. First, John is shorter than 180 cm, so he is not the criminal. Second, Tim doesn't have blue eyes, so he is not the criminal, either. Lastly, Steve has red hair, so he isn't the criminal.",
   "choices": [],
-  "answer": "",
+  "answer": "The criminal is Mike.",
   "note": ""
  },
  {
@@ -1360,7 +1364,7 @@ registerExam(5, [
   "prompt": "주어진 우리말을 보고 빈칸에 알맞은 단어를 <보기>에서 골라 쓰시오.\n보기: height, wig, eyewitness, bakery, janitor, following\n(1) 청소부, 관리인 → ______\n(2) 빵집 → ______\n(3) 키 → ______\n(4) 목격자 → ______\n(5) 다음에 나오는 → ______\n(6) 가발 → ______",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) janitor / (2) bakery / (3) height / (4) eyewitness / (5) following / (6) wig",
   "note": ""
  },
  {
@@ -1382,7 +1386,7 @@ registerExam(5, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.\n(1) 저는 그에게 스페인어로 말했지만, 그는 제 말을 이해하지 못했어요.\n→ I ______ to him in ______, but he didn't ______ me.\n(2) 여러분, 우리는 다음으로 모네의 그림으로 이동하겠습니다.\n→ Everyone, we'll ______ ______ to Monet's paintings ______.\n(3) Tim은 파란색 눈을 가지고 있지 않기 때문에, 그도 범인이 아니다.\n→ Tim doesn't ______ blue eyes, so he is not the ______, ______.\n(4) 지난밤 누군가가 Brown 씨의 보석 가게에서 금반지를 훔쳤다.\n→ ______ ______ the gold rings from Mr. Brown's ______ shop last night.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) spoke / Spanish / understand  (2) move / on / next  (3) have / criminal / either  (4) Someone / stole / jewelry",
   "note": ""
  },
  {
@@ -1393,7 +1397,7 @@ registerExam(5, [
   "prompt": "다음 대화의 밑줄 친 우리말에 맞게 빈칸에 알맞은 단어를 쓰시오.\n(1) You ______ ______ ______ pets inside.\n(2) ______ ______ pets inside.\n(3) You are ______ ______ ______ ______ pets inside.",
   "passage": "G: Excuse me. May I bring my dog to the store?\nM: No, you may not. 실내에는 반려동물을 데려오면 안 됩니다.\nG: OK. I understand.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) must not bring / (2) Don't bring / (3) not allowed to bring",
   "note": ""
  },
  {
@@ -1404,7 +1408,7 @@ registerExam(5, [
   "prompt": "(05~06) 다음 대화를 읽고, 물음에 답하시오.\n위 대화의 빈칸 ⓐ와 ⓑ에 공통으로 들어갈 단어를 주어진 철자로 시작하여 쓰시오.\n→ M______",
   "passage": "B: ⓐ______ I eat here?\nW: (A)(inside / not / the / may / , / eat / no / you / museum).\nB: How about water? ⓑ______ I drink water?\nW: Sure, water is OK.",
   "choices": [],
-  "answer": "",
+  "answer": "May",
   "note": ""
  },
  {
@@ -1415,7 +1419,7 @@ registerExam(5, [
   "prompt": "위 대화의 괄호 (A) 안의 단어들을 순서대로 나열할 때 4번째로 오는 단어를 쓰시오.\n→ ______",
   "passage": "B: ⓐ______ I eat here?\nW: (A)(inside / not / the / may / , / eat / no / you / museum).\nB: How about water? ⓑ______ I drink water?\nW: Sure, water is OK.",
   "choices": [],
-  "answer": "",
+  "answer": "not",
   "note": ""
  },
  {
@@ -1426,7 +1430,7 @@ registerExam(5, [
   "prompt": "다음 괄호 안에서 알맞은 것을 골라 빈칸에 쓰시오.\n(1) Is there ______ near here? (a restaurant / restaurants)\n(2) There were ______ on the wall. (a painting / paintings)\n(3) There aren't ______ in this city. (a school / many schools)",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) a restaurant / (2) paintings / (3) many schools",
   "note": ""
  },
  {
@@ -1437,7 +1441,7 @@ registerExam(5, [
   "prompt": "괄호 안의 단어를 알맞은 형태로 바꾸어 빈칸에 쓰시오.\n(1) I think science is ______ than mathematics. (difficult)\n(2) This computer is ______ than that one. (bad)\n(3) Spino is ______ of the four robots. (expensive)",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) more difficult / (2) worse / (3) the most expensive",
   "note": ""
  },
  {
@@ -1448,7 +1452,7 @@ registerExam(5, [
   "prompt": "다음 문장의 밑줄 친 부분을 바르게 고쳐 쓰시오.\n(1) Andres swims the fastest than the other players. →\n(2) This house is the more expensive in town. →\n(3) My cat is more bigger than my friend's cat. →\n(4) Was there any mistakes in my report last week? →\n(5) There aren't a lot of cheese on the pizza. →",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) Andres swims faster than the other players. / (2) This house is the most expensive in town. / (3) My cat is bigger than my friend's cat. / (4) Were there any mistakes in my report last week? / (5) There isn't a lot of cheese on the pizza.",
   "note": ""
  },
  {
@@ -1459,7 +1463,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 괄호 안의 단어들을 순서대로 바르게 배열하시오. (필요시 어형을 바꿀 것.)\n언덕 위에 교회가 있었다.\n(church / be / a / hill / there / on / the / .)\n→ ______",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "There was a church on the hill.",
   "note": ""
  },
  {
@@ -1470,7 +1474,7 @@ registerExam(5, [
   "prompt": "다음 표를 보고, 주어진 단어를 알맞은 형태로 써서 문장을 완성하시오.\n[표] John: Age 15, Weight 60kg, Height 175cm / Sean: Age 17, Weight 55kg, Height 173cm / David: Age 20, Weight 58kg, Height 170cm\n(1) John is ______ than David. (young)\n(2) Sean is ______ than John. (light)\n(3) David is the ______ of the three students. (old)\n(4) John is the ______ of the three students. (heavy)",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) younger / (2) lighter / (3) oldest / (4) heaviest",
   "note": ""
  },
  {
@@ -1481,7 +1485,7 @@ registerExam(5, [
   "prompt": "다음 표에 맞도록 빈칸에 들어갈 적절한 말을 쓰시오.\n[표] name: Andres/Larry/Tim, height: 176cm/173cm/182cm\n(1) Andres is ______ ______ Larry.\n(2) Larry is ______ ______ of the three.\n(3) Tim is ______ ______ of the three.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) taller than / (2) the shortest / (3) the tallest",
   "note": ""
  },
  {
@@ -1492,7 +1496,7 @@ registerExam(5, [
   "prompt": "(13~15) 다음 글을 읽고, 물음에 답하시오.\n위 글의 빈칸 ⓐ에 crime을 알맞은 형태로 쓰시오.\n→ ______",
   "passage": "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. ⒶThere was four eyewitnesses. What did Ⓑthey say? Read the following, and find the ⓐ______.",
   "choices": [],
-  "answer": "",
+  "answer": "criminal",
   "note": ""
  },
  {
@@ -1503,7 +1507,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓐ에서 어법상 틀린 부분을 찾아 고치시오.\n______ → ______",
   "passage": "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. ⒶThere was four eyewitnesses. What did Ⓑthey say? Read the following, and find the ⓐ______.",
   "choices": [],
-  "answer": "",
+  "answer": "was → were",
   "note": ""
  },
  {
@@ -1514,8 +1518,12 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓑthey가 가리키는 것을 본문에서 찾아 쓰시오.\n→ ______",
   "passage": "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. ⒶThere was four eyewitnesses. What did Ⓑthey say? Read the following, and find the ⓐ______.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "the eyewitnesses",
+  "note": "",
+  "alt": [
+   "eyewitnesses",
+   "four eyewitnesses"
+  ]
  },
  {
   "page": 26,
@@ -1525,7 +1533,7 @@ registerExam(5, [
   "prompt": "(16~17) 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐ를 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 말을 쓰시오.\n박스: \"I was a little ______ than him.\"",
   "passage": "Ann Jones, a visitor\nI was looking at the Monalisa, and someone threw a cake at the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm about 170 cm tall, and ⓐhe was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was running away, and something fell off his head. It was his wig. I ran after him, but I couldn't catch him. He was faster than me. In fact, the old man was not old. He was a young man with long brown hair.",
   "choices": [],
-  "answer": "",
+  "answer": "shorter",
   "note": ""
  },
  {
@@ -1536,7 +1544,7 @@ registerExam(5, [
   "prompt": "본문의 내용과 일치하도록 다음 빈칸에 알맞은 단어를 쓰시오.\n박스: \"Carlos Diaz couldn't catch the old man because he was ______ than the old man.\"",
   "passage": "Ann Jones, a visitor\nI was looking at the Monalisa, and someone threw a cake at the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm about 170 cm tall, and ⓐhe was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was running away, and something fell off his head. It was his wig. I ran after him, but I couldn't catch him. He was faster than me. In fact, the old man was not old. He was a young man with long brown hair.",
   "choices": [],
-  "answer": "",
+  "answer": "slower",
   "note": ""
  },
  {
@@ -1547,7 +1555,7 @@ registerExam(5, [
   "prompt": "(18~19) 다음 글을 읽고, 물음에 답하시오.\n위 글의 빈칸 ⓐ에 들어갈 알맞은 대명사를 쓰시오.\n→ ______",
   "passage": "Camila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in Spanish, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest ⓐ______.\nⓑWe sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "one",
   "note": ""
  },
  {
@@ -1558,8 +1566,11 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 ⓑ를 다음과 같이 바꿔 쓸 때 빈칸에 들어갈 알맞은 말을 쓰시오.\n박스: \"______ we sold only one cake that day, I remember him clearly.\"",
   "passage": "Camila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in Spanish, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest ⓐ______.\nⓑWe sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "Because",
+  "note": "",
+  "alt": [
+   "Since"
+  ]
  },
  {
   "page": 27,
@@ -1569,7 +1580,7 @@ registerExam(5, [
   "prompt": "(20~21) 다음 글을 읽고, 물음에 답하시오.\n위 글의 밑줄 친 ⓐ에서 어법상 틀린 부분을 찾아 고치시오.\n______ → ______",
   "passage": "Who Stole the Gold Rings?\nSomeone stole the gold rings from Mr. Brown's jewelry shop last night. There are four suspects — John, Tim, Steve, and Mike. The criminal is Mike. This is for the following reasons. First, John is shorter than 180 cm, so he is not the criminal. ⓐSecond, Tim doesn't have blue eyes, so he is not the criminal, too. Lastly, Steve has red hair, so he isn't the criminal.",
   "choices": [],
-  "answer": "",
+  "answer": "too → either",
   "note": ""
  },
  {
@@ -1580,7 +1591,7 @@ registerExam(5, [
   "prompt": "위 글을 읽고, 범인을 추론하는 과정 3단계를 우리말로 쓰시오.\n(1) ______\n(2) ______\n(3) ______",
   "passage": "Who Stole the Gold Rings?\nSomeone stole the gold rings from Mr. Brown's jewelry shop last night. There are four suspects — John, Tim, Steve, and Mike. The criminal is Mike. This is for the following reasons. First, John is shorter than 180 cm, so he is not the criminal. ⓐSecond, Tim doesn't have blue eyes, so he is not the criminal, too. Lastly, Steve has red hair, so he isn't the criminal.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) John은 키가 180cm보다 작아서 범인이 아님 / (2) Tim은 파란 눈이 아니어서 범인이 아님 / (3) Steve는 빨간 머리라서 범인이 아님",
   "note": ""
  },
  {
@@ -1597,7 +1608,7 @@ registerExam(5, [
    "You must not touch the animals. (만지다)",
    "I ran after him, but I couldn't catch him. (잡다)"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1614,7 +1625,7 @@ registerExam(5, [
    "Britain – England",
    "Japan – Japanese"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1625,7 +1636,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 말을 <보기>에서 찾아 쓰시오.\n보기: front / next / pieces / following\n(1) There were ______ of cake all over the painting.\n(2) Read the ______, and find the criminal.\n(3) He was standing in ______ of a wheelchair.\n(4) There is a ball ______ to the bed.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) pieces / (2) following / (3) front / (4) next",
   "note": ""
  },
  {
@@ -1636,7 +1647,7 @@ registerExam(5, [
   "prompt": "(04~06) 다음 두 대화를 읽고, 물음에 답하시오.\n위 대화의 빈칸 ⓐ와 ⓑ에 공통으로 들어갈 수 있는 단어를 3개 쓰시오.\n→ ______",
   "passage": "(1)\nA: ⓐ______ I ride a bike here?\nB: (A)______ (may)\n(2)\nA: ⓑ______ I fly a drone here?\nB: (B)______ (may) (C)You must not fly a drone here.",
   "choices": [],
-  "answer": "",
+  "answer": "May, Can, Could",
   "note": ""
  },
  {
@@ -1647,7 +1658,7 @@ registerExam(5, [
   "prompt": "위 대화의 빈칸 (A)와 (B)에 들어갈 알맞은 표현을 주어진 단어를 포함하여 각각 3단어, 4단어의 영어로 쓰시오.\n(A) ______\n(B) ______",
   "passage": "(1)\nA: ⓐ______ I ride a bike here?\nB: (A)______ (may)\n(2)\nA: ⓑ______ I fly a drone here?\nB: (B)______ (may) (C)You must not fly a drone here.",
   "choices": [],
-  "answer": "",
+  "answer": "(A) Yes, you may. / (B) No, you may not.",
   "note": ""
  },
  {
@@ -1664,7 +1675,7 @@ registerExam(5, [
    "Never fly a drone here.",
    "You are not allowed to fly a drone here."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1681,7 +1692,7 @@ registerExam(5, [
    "this",
    "that"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1692,7 +1703,7 @@ registerExam(5, [
   "prompt": "위 대화의 밑줄 친 (A)의 우리말을 주어진 단어를 사용하여 6단어의 영어로 쓰시오.\n→ ______ (must)",
   "passage": "M: Everybody, look over here, please. ⓐ______ is Sunflowers by Van Gogh.\nG: Wow, ⓑ______ is my favorite painting. May I take a picture of it?\nM: Yes, you may, but (A)플래시는 사용하시면 안 됩니다.\nG: Why not? It's a little dark in here.\nM: I'm sorry, but using the flash can damage paintings.\nG: Oh, I didn't know that.\nM: Everyone, we'll move on to Monet's paintings next.\nG: Great!",
   "choices": [],
-  "answer": "",
+  "answer": "You must not use the flash.",
   "note": ""
  },
  {
@@ -1709,7 +1720,7 @@ registerExam(5, [
    "Why shouldn't they use flash when they take pictures?",
    "What is the title of the next painting to look at?"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1726,7 +1737,7 @@ registerExam(5, [
    "were",
    "does"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1743,7 +1754,7 @@ registerExam(5, [
    "greater – more",
    "greatest – more"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "①,②번 선택지가 인쇄상 동일하게 표기됨 (원문 그대로 전사)"
  },
  {
@@ -1754,7 +1765,7 @@ registerExam(5, [
   "prompt": "다음 문장에서 어법상 잘못된 부분을 바르게 고쳐 문장을 다시 쓰시오.\nThe airplane is the faster of the four.\n→ ______",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "The airplane is the fastest of the four.",
   "note": ""
  },
  {
@@ -1765,7 +1776,7 @@ registerExam(5, [
   "prompt": "다음 밑줄 친 ①~⑤ 중 어법상 틀린 것은?",
   "passage": "①There ②are ③some milk ④in ⑤the cup.",
   "choices": [],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1782,7 +1793,7 @@ registerExam(5, [
    "There was some leaves on the ground. (→ This was)",
    "He is the most famous writer of our country. (→ in our country)"
   ],
-  "answer": "",
+  "answer": "①, ④",
   "note": ""
  },
  {
@@ -1799,7 +1810,7 @@ registerExam(5, [
    "4개",
    "5개"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1810,7 +1821,7 @@ registerExam(5, [
   "prompt": "다음 밑줄 친 (A)의 우리말에 맞도록 괄호 안의 단어를 이용하여 네 단어의 완전한 영어 문장으로 쓰시오.\n→ ______",
   "passage": "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. (A)네 명의 목격자가 있었다.(there)",
   "choices": [],
-  "answer": "",
+  "answer": "There were four eyewitnesses.",
   "note": ""
  },
  {
@@ -1821,7 +1832,7 @@ registerExam(5, [
   "prompt": "(17~18) 다음 글을 읽고, 물음에 답하시오.\n위 글의 (①)~(⑤) 중에 주어진 문장이 들어갈 위치로 가장 알맞은 것은?\n박스: \"It was his wig.\"",
   "passage": "Ann Jones, a visitor\nI was looking at the Monalisa, and someone threw a cake at the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm about 170 cm tall, and he was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was running away, and something fell off his head. (①) I ran after him, but I couldn't catch him. (②) He was faster than me. (③) In fact, the old man was not old. (④) He was a young man with long brown hair. (⑤)",
   "choices": [],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1838,7 +1849,7 @@ registerExam(5, [
    "how to wear a wig",
    "the criminal's hair color"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1855,7 +1866,7 @@ registerExam(5, [
    "for – to",
    "from – in"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -1872,7 +1883,7 @@ registerExam(5, [
    "There",
    "wheelchair"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -1883,7 +1894,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓑthat day가 가리키는 것을 본문에서 찾아 쓰시오.\n→ ______",
   "passage": "Diego Perez, a guard\nI went to the crime scene, and there were pieces of cake all over the painting. Ⓐ그림 가까이에는 휠체어도 있었다, and I found a cake box next to the wheelchair. The box was ⓐ______ Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him ⓑ______ Spanish, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest one. We sold only one cake Ⓑthat day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "Last Friday",
   "note": ""
  },
  {
@@ -1900,7 +1911,7 @@ registerExam(5, [
    "Why",
    "Where"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1911,7 +1922,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓐ에서 어법상 틀린 부분을 찾아 고치시오.\n______ → ______",
   "passage": "ⒶNow, look at the informations about the suspects.\nⓐ______ threw the cake at the Monalisa?\n[그림: The Suspects 카드 4장]\nAndres Lozano - Height: 176 cm, Hair: long, black, Languages: Spanish, English, Eyes: brown\nLarry Johnson - Height: 173 cm, Hair: long, brown, Languages: English, Eyes: blue\nTim Baker - Height: 182 cm, Hair: long, brown, Languages: English, Eyes: green\nLuca Perez - Height: 166 cm, Hair: short, gray, Languages: Spanish, Eyes: blue",
   "choices": [],
-  "answer": "",
+  "answer": "informations → information",
   "note": ""
  },
  {
@@ -1928,7 +1939,7 @@ registerExam(5, [
    "Luca is the only man with short hair.",
    "Luca is the shortest of the four."
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -1945,7 +1956,7 @@ registerExam(5, [
    "scene – 사진",
    "piece – 조각"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -1962,7 +1973,7 @@ registerExam(5, [
    "here",
    "following"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -1973,7 +1984,7 @@ registerExam(5, [
   "prompt": "주어진 우리말에 맞게 다음 빈칸에 들어갈 말을 쓰시오.\n(1) 실례합니다, 여기서는 통화하시면 안 됩니다.\n→ Excuse me, but you must ______ talk ______ ______ here.\n(2) 죄송하지만 플래시를 사용하는 것은 그림을 훼손시킬 수 있습니다.\n→ I'm sorry, but ______ the ______ can ______ paintings.\n(3) 실내에는 반려동물을 데려오면 안 됩니다.\n→ You must not ______ pets ______.",
   "passage": "",
   "choices": [],
-  "answer": "",
+  "answer": "(1) not / on the / phone  (2) using / flash / damage  (3) bring / inside",
   "note": ""
  },
  {
@@ -1984,7 +1995,7 @@ registerExam(5, [
   "prompt": "(04~05) 다음 대화를 읽고, 물음에 답하시오.\n위 대화의 빈칸 ⓐ에 들어갈 단어를 주어진 철자로 시작하여 쓰시오.\n→ M______",
   "passage": "G: Excuse me. ⓐ______ I touch this golden bear?\nM: No, you may not. (A)You must not touch anything in this room.\nG: OK, I understand.",
   "choices": [],
-  "answer": "",
+  "answer": "May",
   "note": ""
  },
  {
@@ -2001,7 +2012,7 @@ registerExam(5, [
    "You should not touch anything in this room.",
    "You don't have to touch anything in this room."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2018,7 +2029,7 @@ registerExam(5, [
    "ⓒ-ⓐ-ⓑ",
    "ⓒ-ⓑ-ⓐ"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2035,7 +2046,7 @@ registerExam(5, [
    "Is it okay to take food into the museum?",
    "Should I take food into the museum?"
   ],
-  "answer": "",
+  "answer": "②, ⑤",
   "note": ""
  },
  {
@@ -2052,7 +2063,7 @@ registerExam(5, [
    "not",
    "you"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2063,7 +2074,7 @@ registerExam(5, [
   "prompt": "위 대화의 밑줄 친 (C)의 우리말에 맞게 빈칸에 알맞은 단어를 쓰시오.\n→ ______ ______ ______?",
   "passage": "B: (A)박물관에 음식을 가지고 들어가도 되나요?\nW: No, you may not. (B)(any / inside / bring / not / you / food / must).\nB: (C)물은 어때요?\nW: Only bottled water is OK.",
   "choices": [],
-  "answer": "",
+  "answer": "How about water?",
   "note": ""
  },
  {
@@ -2080,7 +2091,7 @@ registerExam(5, [
    "three onions",
    "lots of honey"
   ],
-  "answer": "",
+  "answer": "②, ⑤",
   "note": ""
  },
  {
@@ -2097,7 +2108,7 @@ registerExam(5, [
    "more",
    "busiest"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2114,7 +2125,7 @@ registerExam(5, [
    "hardest – was",
    "most hard – were"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2125,7 +2136,7 @@ registerExam(5, [
   "prompt": "다음 대화에서 어법상 틀린 한 곳을 찾아 바르게 고쳐 문장을 다시 쓰시오.",
   "passage": "A: I heard there's a new restaurant in town. Is it better than the old one?\nB: Yes, the new restaurant is most spacious than the old one. It also offers a wider variety of pizzas and pasta dishes.",
   "choices": [],
-  "answer": "",
+  "answer": "The new restaurant is more spacious than the old one.",
   "note": ""
  },
  {
@@ -2142,7 +2153,7 @@ registerExam(5, [
    "ⓒ, ⓔ",
    "ⓓ, ⓔ"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2153,7 +2164,7 @@ registerExam(5, [
   "prompt": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고쳐 문장을 다시 쓰시오.",
   "passage": "(1) We can find out the information most easily on the Internet than in newspapers.\n(2) There is the World Cup final last week.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) We can find out the information more easily on the Internet than in newspapers. / (2) There was the World Cup final last week.",
   "note": "(1), (2) 각각 답란 있음"
  },
  {
@@ -2164,7 +2175,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ에 Spain을 알맞은 형태로 쓰시오.",
   "passage": "Diego Perez, a guard\nⒶ나는 범죄 현장에 갔다, and there were pieces of cake all over the painting. ⒷThere was also a wheelchair near from the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in ⓐ______, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest one. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "Spanish",
   "note": "16~18 공통 지문. 빈칸 ⓐ는 원본에 회색으로 가려져 있음"
  },
  {
@@ -2175,7 +2186,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓐ의 우리말에 맞게 6단어로 영작하시오.",
   "passage": "Diego Perez, a guard\nⒶ나는 범죄 현장에 갔다, and there were pieces of cake all over the painting. ⒷThere was also a wheelchair near from the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in ⓐ______, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest one. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "I went to the crime scene.",
   "note": "16~18 공통 지문"
  },
  {
@@ -2186,7 +2197,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 Ⓑ에서 어법상 틀린 부분을 찾아 고치시오.",
   "passage": "Diego Perez, a guard\nⒶ나는 범죄 현장에 갔다, and there were pieces of cake all over the painting. ⒷThere was also a wheelchair near from the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in ⓐ______, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest one. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "near from → near",
   "note": "16~18 공통 지문. 답란 형식: ______ → ______"
  },
  {
@@ -2203,7 +2214,7 @@ registerExam(5, [
    "certainly",
    "just about"
   ],
-  "answer": "",
+  "answer": "①, ②, ⑤",
   "note": "19~21 공통 지문. 복수 정답 가능 문제"
  },
  {
@@ -2214,7 +2225,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 ⓑsomething이 가리키는 것을 본문에서 찾아 쓰시오.",
   "passage": "Ann Jones, a visitor\nI was looking at the Monalisa, and someone threw a cake at the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm ⓐabout 170 cm tall, and he was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was running away, and ⓑsomething fell off his head. It was his wig. I ran after him, but I couldn't catch him. He was faster than me. In fact, the old man was not old. He was a young man with long brown hair.",
   "choices": [],
-  "answer": "",
+  "answer": "his wig",
   "note": "19~21 공통 지문"
  },
  {
@@ -2231,7 +2242,7 @@ registerExam(5, [
    "How tall was Carlos Diaz?",
    "Why couldn't Carlos Diaz catch the old man?"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "19~21 공통 지문"
  },
  {
@@ -2248,7 +2259,7 @@ registerExam(5, [
    "scene",
    "surroundings"
   ],
-  "answer": "",
+  "answer": "④",
   "note": "22~24 공통 지문"
  },
  {
@@ -2265,7 +2276,7 @@ registerExam(5, [
    "She let him in.",
    "I like to paint in oils."
   ],
-  "answer": "",
+  "answer": "ⓑ와 같은 것: ② / ⓒ와 같은 것: ③",
   "note": "22~24 공통 지문. 답란: '→ ⓑ와 같은 것: ___, ⓒ와 같은 것: ___'"
  },
  {
@@ -2276,8 +2287,12 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 ⓓone이 가리키는 것을 본문에서 찾아 쓰시오.",
   "passage": "Diego Perez, a guard\nI went to the crime ⓐ______, and there were pieces of cake all over the painting. There was also a wheelchair near the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came ⓑin. I spoke to him ⓒin Spanish, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest ⓓone. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
-  "note": "22~24 공통 지문"
+  "answer": "cake",
+  "note": "22~24 공통 지문",
+  "alt": [
+   "a cake",
+   "the smallest cake"
+  ]
  },
  {
   "page": 36,
@@ -2293,7 +2308,7 @@ registerExam(5, [
    "following – next",
    "bring – take"
   ],
-  "answer": "",
+  "answer": "④",
   "note": ""
  },
  {
@@ -2310,7 +2325,7 @@ registerExam(5, [
    "criminal",
    "sign"
   ],
-  "answer": "",
+  "answer": "③",
   "note": ""
  },
  {
@@ -2327,7 +2342,7 @@ registerExam(5, [
    "inside",
    "information"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2338,7 +2353,7 @@ registerExam(5, [
   "prompt": "위 대화의 괄호 (A) 안의 단어를 순서대로 나열할 때 3번째로 오는 단어를 쓰시오.",
   "passage": "B: (A)(the / video / , / may / go / room / to / I) Mom?\nW: Of course, (B)but don't run.\nB: Why not?\nW: Look at that sign. You must not run inside the museum.",
   "choices": [],
-  "answer": "",
+  "answer": "go",
   "note": "지면 상단에 '적중 예상 문제 3회' 대신 'Answers & Explanations ▶ (6)' 텍스트가 인쇄되어 있으나, 뒤 페이지(37쪽) 07~12번과 이어지는 동일 '적중 예상 문제 3회' 세트로 판단됨(정답/해설 표는 없음)"
  },
  {
@@ -2355,7 +2370,7 @@ registerExam(5, [
    "but you should not run.",
    "but you are not allowed to run."
   ],
-  "answer": "",
+  "answer": "①",
   "note": "상단 'Answers & Explanations ▶ (6)' 텍스트 관련, 위 04번 항목 note 참고"
  },
  {
@@ -2377,8 +2392,11 @@ registerExam(5, [
   "prompt": "위 대화의 밑줄 친 (A)와 같은 의미의 표현을 다음 <조건>에 맞게 쓰시오.",
   "passage": "W: Excuse me, but (A)you must not talk on the phone here.\nB: I'm terribly sorry. I'll turn off my phone.\nW: You don't have to. Texting is OK.\nB: I see. Thank you.\n<조건>\n(1) 축약형으로 된 명령문 형식을 쓸 것.\n(2) 조동사 should를 사용할 것.",
   "choices": [],
-  "answer": "",
-  "note": "(1), (2) 각각 답란 있음"
+  "answer": "(1) Don't talk on the phone here. / (2) You should not talk on the phone here.",
+  "note": "(1), (2) 각각 답란 있음",
+  "alt": [
+   "(2) You shouldn't talk on the phone here."
+  ]
  },
  {
   "page": 37,
@@ -2405,7 +2423,7 @@ registerExam(5, [
   "prompt": "다음 대화의 밑줄 친 문장과 같은 의미가 되도록 빈칸에 알맞은 단어를 쓰시오.",
   "passage": "G: Excuse me. May I bring my dog to the store?\nM: I'm sorry, but you must not bring pets inside.\nG: OK. I understand.\n→ Do you ______ ______ I bring my dog to the store?",
   "choices": [],
-  "answer": "",
+  "answer": "mind if",
   "note": ""
  },
  {
@@ -2422,7 +2440,7 @@ registerExam(5, [
    "most – least",
    "many – most"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2439,7 +2457,7 @@ registerExam(5, [
    "My old brother is tallest person in my family.",
    "This watch is the most expensive in the store."
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": ""
  },
  {
@@ -2456,7 +2474,7 @@ registerExam(5, [
    "ⓒ, ⓓ, ⓔ",
    "ⓓ, ⓔ, ⓕ"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2473,7 +2491,7 @@ registerExam(5, [
    "It's the most beautiful sunset this year.",
    "That movie is the most amazing film."
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2484,7 +2502,7 @@ registerExam(5, [
   "prompt": "다음 중 어법상 틀린 문장 두 개를 찾아 기호를 쓰고, 바르게 고쳐 문장을 다시 쓰시오.",
   "passage": "ⓐ Sean is more nice than his sister.\nⓑ That's the best way to do it.\nⓒ He is the fastest runner on his team.\nⓓ How much food are there on the table?",
   "choices": [],
-  "answer": "",
+  "answer": "(1) ⓐ → Sean is nicer than his sister. / (2) ⓓ → How much food is there on the table?",
   "note": "(1)( )→___, (2)( )→___ 형식의 답란 2개"
  },
  {
@@ -2495,7 +2513,7 @@ registerExam(5, [
   "prompt": "주어진 우리말을 <조건>에 맞게 영작하시오.",
   "passage": "누가 가장 어린 학생입니까?\n<조건>\n1. student를 포함한 최상급 문장으로 쓸 것.\n2. 총 5단어로 쓸 것.\n3. 주어와 동사를 갖춘 문장으로 쓸 것.\n4. 대·소문자 및 구두점에 유의할 것.",
   "choices": [],
-  "answer": "",
+  "answer": "Who is the youngest student?",
   "note": ""
  },
  {
@@ -2506,7 +2524,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ와 ⓑ에 be동사를 알맞은 형태로 쓰시오.",
   "passage": "Diego Perez, a guard\nI went to the crime scene, and there ⓐ______ pieces of cake all over the painting. There ⓑ______ also a wheelchair near the painting, and I found a cake box next to the wheelchair. The box was from Camila's Bakery.\n\nCamila Santos, the owner of Camila's Bakery\nLast Friday, a young man came in. I spoke to him in Spanish, but he didn't understand me. He spoke only English. We had a lot of different cakes, but he just wanted the smallest one. We sold only one cake that day, so I remember him clearly. Oh, he had blue eyes.",
   "choices": [],
-  "answer": "",
+  "answer": "ⓐ were / ⓑ was",
   "note": "16~17 공통 지문. 답란: → ⓐ___, ⓑ___"
  },
  {
@@ -2523,7 +2541,7 @@ registerExam(5, [
    "Did the young man understand Spanish?",
    "What country is the young man from?"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": "16~17 공통 지문"
  },
  {
@@ -2534,7 +2552,7 @@ registerExam(5, [
   "prompt": "위 글의 빈칸 ⓐ에 throw를 알맞은 형태로 쓰시오.",
   "passage": "Ann Jones, a visitor\nI was looking at the Monalisa, and someone ⓐ______ a cake at the painting. I turned around and saw an old man. He was standing in front of a wheelchair. I'm about 170 cm tall, and he was a little taller than me.\n\nCarlos Diaz, a janitor\nAn old man with gray hair was running away, and something fell off his head. It was his wig. I ran after him, but I couldn't catch him. He was faster than me. In fact, the old man was not old. ⓑ그는 긴 갈색 머리의 젊은 남자였어요.",
   "choices": [],
-  "answer": "",
+  "answer": "threw",
   "note": "18~20 공통 지문"
  },
  {
@@ -2545,7 +2563,7 @@ registerExam(5, [
   "prompt": "위 글의 두 목격자들의 진술로 알 수 있는 범인의 용모에 대한 정보를 빈칸에 우리말로 쓰시오.",
   "passage": "• Ann Jones의 진술로 알 수 있는 것: (1)______\n• Carlos Diaz의 진술로 알 수 있는 것: (2)______",
   "choices": [],
-  "answer": "",
+  "answer": "(1) 범인은 키가 (Ann보다) 170cm보다 조금 더 크다 / (2) 회색 머리는 가발이었고, 실제로는 긴 갈색 머리의 젊은 남자다",
   "note": "18~20 공통 지문"
  },
  {
@@ -2562,7 +2580,7 @@ registerExam(5, [
    "man",
    "was"
   ],
-  "answer": "",
+  "answer": "③",
   "note": "18~20 공통 지문"
  },
  {
@@ -2579,7 +2597,7 @@ registerExam(5, [
    "for",
    "with"
   ],
-  "answer": "",
+  "answer": "③",
   "note": "21~23 공통 지문"
  },
  {
@@ -2590,7 +2608,7 @@ registerExam(5, [
   "prompt": "위 글의 밑줄 친 ⓑ에서 어법상 틀린 부분을 찾아 고치시오.",
   "passage": "Hello, I'm Park Jinho ⓐ______ Evening News. ⒷOn last Saturday, a man threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia. The man is a little taller than 170 cm. He has brown hair and blue eyes, and speaks only English. There were four suspects, and the police found the criminal. The criminal is Larry Johnson.",
   "choices": [],
-  "answer": "",
+  "answer": "On last Saturday → Last Saturday",
   "note": "21~23 공통 지문. 답란: ______ → ______"
  },
  {
@@ -2607,7 +2625,7 @@ registerExam(5, [
    "범인의 머리와 눈 색깔",
    "용의자들의 이름"
   ],
-  "answer": "",
+  "answer": "⑤",
   "note": "21~23 공통 지문"
  },
  {
@@ -2618,7 +2636,7 @@ registerExam(5, [
   "prompt": "다음 밑줄 친 부분이 어법상 바르면 ○표를 하고, 틀리면 바르게 고쳐 쓰시오.",
   "passage": "(1) Learning English is less harder than learning Korean.\n(2) We are getting the older and the older.\n(3) There is nothing more than exciting action movies.\n(4) The smartphone is most convenient invention in the store.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) Learning English is less hard than learning Korean. / (2) We are getting older and older. / (3) There is nothing more exciting than action movies. / (4) The smartphone is the most convenient invention in the store.",
   "note": "(1)~(4) 각각 답란 있음"
  },
  {
@@ -2629,7 +2647,7 @@ registerExam(5, [
   "prompt": "다음 그림을 보고 빈칸에 들어갈 알맞은 단어를 쓰시오.",
   "passage": "(1) [그림: 책상 아래 강아지 두 마리] → There ______ two dogs under the desk.\n(2) [그림: 물이 든 유리컵] → There ______ water in the glass.\n(3) [그림: 숲 속 여러 동물] → There ______ many animals in the forest.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) are / (2) is / (3) are",
   "note": "그림 필요"
  },
  {
@@ -2640,7 +2658,7 @@ registerExam(5, [
   "prompt": "다음 목격자의 진술과 용의자 정보를 바탕으로 사건의 범인을 추론하는 글을 완성하시오.",
   "passage": "Eyewitness Statement\n• taller than 180 cm\n• blue eyes\n• black hair\nThe criminal is Mike.\n\nWho Stole the Gold Rings?\nSomeone stole the gold rings from Mr. Brown's jewelry shop last night. There are four ______ - John, Tim, Steve, and Mike. The ______ is Mike. This is for the following reasons. First, John is ______ 180 cm, so he is not the criminal. Second, Tim doesn't have ______, so he is not the criminal, either. Lastly, Steve has ______ hair, so he isn't the criminal.",
   "choices": [],
-  "answer": "",
+  "answer": "suspects / criminal / shorter than / blue eyes / red",
   "note": "그림 필요 (용의자 4인 John/Tim/Steve/Mike 신장 라인업 이미지)"
  },
  {
@@ -2651,7 +2669,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 알맞은 말을 쓰시오.",
   "passage": "A: May I drink water in class?\nB: Yes, you ______.",
   "choices": [],
-  "answer": "",
+  "answer": "may",
   "note": ""
  },
  {
@@ -2662,7 +2680,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 알맞은 말을 쓰시오.",
   "passage": "You ______ not eat snacks in class.",
   "choices": [],
-  "answer": "",
+  "answer": "must",
   "note": ""
  },
  {
@@ -2673,7 +2691,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오. (빈칸 하나에 여러 단어를 쓸 수 있으며 필요한 경우 변형할 것. 대·소문자 무시.)",
   "passage": "<보기> but / be / catch / a lot of / understand / one / a little / in front of / remember / around / after / with / near / at / away / about / off / so / next to / in / from / all over\n\nI turned ______ and saw an old man.",
   "choices": [],
-  "answer": "",
+  "answer": "around",
   "note": "03~15번 공통 <보기> 사용"
  },
  {
@@ -2684,7 +2702,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I'm ______ 170 cm tall, and he was ______ taller than me.",
   "choices": [],
-  "answer": "",
+  "answer": "about / a little",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2695,7 +2713,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "An old man ______ gray hair was running ______, and something fell ______ his head.",
   "choices": [],
-  "answer": "",
+  "answer": "with / away / off",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2706,7 +2724,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "There ______ also a wheelchair ______ the painting, and I found a cake box ______ the wheelchair.",
   "choices": [],
-  "answer": "",
+  "answer": "was / near / next to",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2717,7 +2735,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "He was standing ______ a wheelchair.",
   "choices": [],
-  "answer": "",
+  "answer": "in front of",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2728,7 +2746,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "The box was ______ Camila's Bakery.",
   "choices": [],
-  "answer": "",
+  "answer": "from",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2739,7 +2757,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "______ fact, the old man was not old.",
   "choices": [],
-  "answer": "",
+  "answer": "In",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2750,7 +2768,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I was looking at the Monalisa, and someone threw a cake ______ the painting.",
   "choices": [],
-  "answer": "",
+  "answer": "at",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2761,7 +2779,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "We sold only one cake that day, ______ I ______ him clearly.",
   "choices": [],
-  "answer": "",
+  "answer": "so / remember",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2772,7 +2790,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I spoke to him ______ Spanish, but he didn't ______ me.",
   "choices": [],
-  "answer": "",
+  "answer": "in / understand",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2783,7 +2801,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "We had ______ different cakes, ______ he just wanted the smallest ______.",
   "choices": [],
-  "answer": "",
+  "answer": "a lot of / but / one",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2794,7 +2812,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I ran ______ him, but I couldn't ______ him.",
   "choices": [],
-  "answer": "",
+  "answer": "after / catch",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2805,7 +2823,7 @@ registerExam(5, [
   "prompt": "다음 빈칸에 들어갈 알맞은 말을 <보기>에서 골라 쓰시오.",
   "passage": "I went to the crime scene, and there were pieces of cake ______ the painting.",
   "choices": [],
-  "answer": "",
+  "answer": "all over",
   "note": "03번 <보기> 공통 사용"
  },
  {
@@ -2819,7 +2837,7 @@ registerExam(5, [
    "taller",
    "tallest"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2833,7 +2851,7 @@ registerExam(5, [
    "smaller",
    "smallest"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2847,7 +2865,7 @@ registerExam(5, [
    "difficulter",
    "more difficult"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2861,7 +2879,7 @@ registerExam(5, [
    "fastest",
    "most fastest"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2875,7 +2893,7 @@ registerExam(5, [
    "faster",
    "more faster"
   ],
-  "answer": "",
+  "answer": "①",
   "note": ""
  },
  {
@@ -2889,7 +2907,7 @@ registerExam(5, [
    "expensivest",
    "most expensive"
   ],
-  "answer": "",
+  "answer": "②",
   "note": ""
  },
  {
@@ -2900,7 +2918,7 @@ registerExam(5, [
   "prompt": "다음 문장의 빈칸에 알맞은 be동사를 쓰시오.",
   "passage": "There ______ a dog under the table.",
   "choices": [],
-  "answer": "",
+  "answer": "is",
   "note": ""
  },
  {
@@ -2911,7 +2929,7 @@ registerExam(5, [
   "prompt": "다음 문장의 빈칸에 알맞은 be동사를 쓰시오.",
   "passage": "There ______ three books on the bed.",
   "choices": [],
-  "answer": "",
+  "answer": "are",
   "note": ""
  },
  {
@@ -2922,8 +2940,11 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "May I touch this golden bear?\n= ______ I touch this golden bear?\n= ______ ______ ______ to touch this golden bear?\n= ______ ______ ______ if I touch this golden bear?",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "(1) Can / (2) Is it okay / (3) Do you mind",
+  "note": "",
+  "alt": [
+   "(3) Would you mind"
+  ]
  },
  {
   "page": 42,
@@ -2933,7 +2954,7 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "You must not eat snacks in class.\n= You ______ not eat snacks in class.\n= ______ eat snacks in class.\n= ______ eat snacks in class.\n= You are not ______ ______ eat snacks in class.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) should / (2) Never / (3) Don't / (4) allowed to",
   "note": ""
  },
  {
@@ -2944,7 +2965,7 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "No, you may not.\n= No, you ______.\n= I'm afraid[sorry], but I ______.\n= I'm afraid[sorry], but you ______.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) can't / (2) mind / (3) can't",
   "note": ""
  },
  {
@@ -2955,8 +2976,11 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "He was taller than me.\n= I was ______ than him.\n= I was not ______ ______ as him.",
   "choices": [],
-  "answer": "",
-  "note": ""
+  "answer": "(1) shorter / (2) so tall",
+  "note": "",
+  "alt": [
+   "(2) as tall"
+  ]
  },
  {
   "page": 42,
@@ -2966,7 +2990,7 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "Emma is the fastest student in her class.\n= Emma is ______ ______ any other ______ in her class.\n= Emma is ______ ______ all the other ______ in her class.\n= ______ ______ student is faster than Emma in her class.\n= No other student is ______ ______ ______ Emma in her class.",
   "choices": [],
-  "answer": "",
+  "answer": "(1) faster than / student / (2) faster than / students / (3) No other / (4) as fast as",
   "note": ""
  },
  {
@@ -2977,7 +3001,7 @@ registerExam(5, [
   "prompt": "다음 빈칸을 알맞게 채우시오.",
   "passage": "There wasn't an empty seat on the bus.\n= The bus didn't ______ an empty seat.",
   "choices": [],
-  "answer": "",
+  "answer": "have",
   "note": ""
  },
  {
@@ -2988,7 +3012,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "지난 토요일, 누군가 콜롬비아 보고타의 보테로 박물관에 있는 '모나리자'에 케이크를 던졌다.",
   "choices": [],
-  "answer": "",
+  "answer": "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia.",
   "note": "책 전체 통합 페이지 번호로 인쇄됨(158). Lesson 05 Think like Sherlock Holmes 관련 지문 요약 영작 문항"
  },
  {
@@ -2999,7 +3023,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "네 명의 목격자가 있었다. 그들은 뭐라고 말했을까?",
   "choices": [],
-  "answer": "",
+  "answer": "There were four eyewitnesses. What did they say?",
   "note": ""
  },
  {
@@ -3010,7 +3034,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "다음을 읽고, 범인을 찾아보자.",
   "choices": [],
-  "answer": "",
+  "answer": "Read the following, and find the criminal.",
   "note": ""
  },
  {
@@ -3021,7 +3045,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Ann Jones, 방문객",
   "choices": [],
-  "answer": "",
+  "answer": "Ann Jones, a visitor",
   "note": "화자 소개 표기. 번역 대상 문장이라기보다 이름/직업 라벨"
  },
  {
@@ -3032,7 +3056,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 '모나리자'를 보고 있었는데, 누군가 그 그림을 향해 케이크를 던졌어요.",
   "choices": [],
-  "answer": "",
+  "answer": "I was looking at the Monalisa, and someone threw a cake at the painting.",
   "note": ""
  },
  {
@@ -3043,7 +3067,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 뒤로 돌았고 한 노인을 봤어요.",
   "choices": [],
-  "answer": "",
+  "answer": "I turned around and saw an old man.",
   "note": ""
  },
  {
@@ -3054,7 +3078,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그는 휠체어 앞에 서 있었어요.",
   "choices": [],
-  "answer": "",
+  "answer": "He was standing in front of a wheelchair.",
   "note": ""
  },
  {
@@ -3065,7 +3089,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 키가 약 170cm 정도인데, 그는 저보다 조금 더 컸어요.",
   "choices": [],
-  "answer": "",
+  "answer": "I'm about 170 cm tall, and he was a little taller than me.",
   "note": ""
  },
  {
@@ -3076,7 +3100,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Carlos Diaz, 청소부",
   "choices": [],
-  "answer": "",
+  "answer": "Carlos Diaz, a janitor",
   "note": "화자 소개 표기. 번역 대상 문장이라기보다 이름/직업 라벨"
  },
  {
@@ -3087,7 +3111,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "회색 머리의 한 노인이 도망가고 있었는데, 그의 머리에서 무언가 떨어졌어요.",
   "choices": [],
-  "answer": "",
+  "answer": "An old man with gray hair was running away, and something fell off his head.",
   "note": ""
  },
  {
@@ -3098,7 +3122,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그것은 그의 가발이었어요.",
   "choices": [],
-  "answer": "",
+  "answer": "It was his wig.",
   "note": ""
  },
  {
@@ -3109,7 +3133,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 그를 뒤쫓았지만, 잡을 수 없었어요. 그는 저보다 더 빨랐거든요.",
   "choices": [],
-  "answer": "",
+  "answer": "I ran after him, but I couldn't catch him. He was faster than me.",
   "note": ""
  },
  {
@@ -3120,7 +3144,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "사실, 그 노인은 나이 든 사람이 아니었어요. 그는 긴 갈색 머리의 젊은 남자였어요.",
   "choices": [],
-  "answer": "",
+  "answer": "In fact, the old man was not old. He was a young man with long brown hair.",
   "note": ""
  },
  {
@@ -3131,7 +3155,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Diego Perez, 경비원",
   "choices": [],
-  "answer": "",
+  "answer": "Diego Perez, a guard",
   "note": "화자 소개 표기. 번역 대상 문장이라기보다 이름/직업 라벨"
  },
  {
@@ -3142,7 +3166,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 범죄 현장에 갔는데, 그림 곳곳에 케이크 조각들이 있었어요.",
   "choices": [],
-  "answer": "",
+  "answer": "I went to the crime scene, and there were pieces of cake all over the painting.",
   "note": "책 전체 통합 페이지 번호로 인쇄됨(159)"
  },
  {
@@ -3153,7 +3177,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그림 근처에 휠체어도 있었는데, 저는 휠체어 옆에서 케이크 상자를 발견했어요.",
   "choices": [],
-  "answer": "",
+  "answer": "There was also a wheelchair near the painting, and I found a cake box next to the wheelchair.",
   "note": ""
  },
  {
@@ -3164,7 +3188,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그 상자는 Camila 빵집의 것이었어요.",
   "choices": [],
-  "answer": "",
+  "answer": "The box was from Camila's Bakery.",
   "note": ""
  },
  {
@@ -3175,7 +3199,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "Camila Santos, 카밀라 빵집의 주인",
   "choices": [],
-  "answer": "",
+  "answer": "Camila Santos, the owner of Camila's Bakery",
   "note": "화자 소개 표기. 번역 대상 문장이라기보다 이름/직업 라벨"
  },
  {
@@ -3186,7 +3210,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "지난 금요일, 한 젊은 남자가 들어 왔어요.",
   "choices": [],
-  "answer": "",
+  "answer": "Last Friday, a young man came in.",
   "note": ""
  },
  {
@@ -3197,7 +3221,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "저는 그에게 스페인어로 말했지만, 그는 제 말을 이해하지 못했어요.",
   "choices": [],
-  "answer": "",
+  "answer": "I spoke to him in Spanish, but he didn't understand me.",
   "note": ""
  },
  {
@@ -3208,7 +3232,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "그는 영어로만 말했어요.",
   "choices": [],
-  "answer": "",
+  "answer": "He spoke only English.",
   "note": ""
  },
  {
@@ -3219,7 +3243,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "우리 가게에는 다양한 케이크가 많이 있었지만, 그는 단지 가장 작은 것을 원했어요.",
   "choices": [],
-  "answer": "",
+  "answer": "We had a lot of different cakes, but he just wanted the smallest one.",
   "note": ""
  },
  {
@@ -3230,7 +3254,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "우리는 그날 케이크를 한 개만 팔아서, 저는 그를 똑똑히 기억해요.",
   "choices": [],
-  "answer": "",
+  "answer": "We sold only one cake that day, so I remember him clearly.",
   "note": ""
  },
  {
@@ -3241,7 +3265,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "아, 그는 파란색 눈을 가지고 있었어요.",
   "choices": [],
-  "answer": "",
+  "answer": "Oh, he had blue eyes.",
   "note": ""
  },
  {
@@ -3252,7 +3276,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "이제, 용의자들에 대한 정보를 보자.",
   "choices": [],
-  "answer": "",
+  "answer": "Now, look at the information about the suspects.",
   "note": ""
  },
  {
@@ -3263,7 +3287,7 @@ registerExam(5, [
   "prompt": "다음 우리말에 맞도록 바르게 영작하시오.",
   "passage": "누가 '모나리자'에 케이크를 던졌을까?",
   "choices": [],
-  "answer": "",
+  "answer": "Who threw the cake at the Monalisa?",
   "note": ""
  }
 ]);
