@@ -20,6 +20,7 @@ const TABS = [
   ["shadow", "본문 쉐도잉"],
   ["dialog", "대화문"],
   ["blank",  "본문 빈칸"],
+  ["recall", "본문 암기"],
   ["gram",   "문법·표현"]
 ];
 
@@ -50,6 +51,15 @@ const App = {
       const b = e.target.closest("button"); if (!b) return;
       [...nav.children].forEach(x => x.setAttribute("aria-selected", x === b));
       this.show(b.dataset.t);
+    };
+    /* 탭이 8개라 좁은 화면에선 선택된 탭이 밖으로 밀림.
+       scrollIntoView는 가로축을 안 움직이고, offsetLeft는 header 기준이라 못 씀.
+       화면 좌표 차이로 계산해서 직접 스크롤. */
+    this.scrollTabIntoView = () => {
+      const b = nav.querySelector('[aria-selected="true"]');
+      if (!b || nav.scrollWidth <= nav.clientWidth) return;
+      const nb = nav.getBoundingClientRect(), bb = b.getBoundingClientRect();
+      nav.scrollLeft += (bb.left - nb.left) - (nb.width - bb.width) / 2;
     };
 
     /* ▶ 버튼은 어디에 있든 한 곳에서 처리 */
@@ -88,6 +98,7 @@ const App = {
       this.mounted.add(tab);
     }
     this.keys = VIEWS[tab].keys || null;
+    if (this.scrollTabIntoView) this.scrollTabIntoView();
   }
 };
 

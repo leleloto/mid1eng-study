@@ -68,6 +68,8 @@ input[type=checkbox]{width:17px; height:17px; accent-color:var(--accent); cursor
 .btn.pri{background:var(--accent); border-color:var(--accent); color:#fff}
 .btn.pri:hover{opacity:.88; color:#fff}
 .btn[aria-pressed="true"]{background:var(--accent-soft); border-color:var(--accent); color:var(--accent)}
+.btn:disabled{opacity:.4; cursor:not-allowed}
+.btn:disabled:hover{border-color:var(--line); color:var(--ink)}
 .btn.sm{padding:5px 10px; font-size:12px}
 
 /* ── 단어장 ── */
@@ -154,6 +156,25 @@ ul.rw .eq{color:var(--dim); font-size:13px}
 .word:hover{color:var(--accent); border-bottom-color:var(--accent)}
 .word.playing{color:var(--accent); border-bottom-style:solid; border-bottom-color:var(--accent)}
 tr.known .word{color:inherit}
+
+/* ── 본문 암기 (한→영) ── */
+.ko-cue{font-size:17px; font-weight:600; margin:0 0 12px; line-height:1.5}
+#rIn{
+  width:100%; font:inherit; font-size:15px; padding:11px 12px; resize:vertical;
+  border:1px solid var(--line); border-radius:8px; background:var(--bg); color:var(--ink);
+}
+#rIn:focus{outline:2px solid var(--accent); outline-offset:-1px; border-color:transparent}
+/* 채점 후에도 내가 쓴 답은 또렷하게 — placeholder처럼 보이면 안 됨 */
+#rIn:disabled{opacity:1; -webkit-text-fill-color:var(--ink); color:var(--ink); background:var(--card)}
+.verdict{font-size:14px; font-weight:700; margin:14px 0 8px}
+.verdict.ok{color:var(--accent)}
+.verdict.no{color:var(--warn)}
+.diffline{font-size:15px; line-height:1.9; margin-bottom:10px}
+.diffline s{color:var(--warn); text-decoration-thickness:1.5px}
+.diffline u{color:var(--accent); font-weight:700; text-decoration-style:dotted}
+.difflegend{font-size:12px; color:var(--dim); margin-top:6px}
+.answerline{font-size:15px; font-weight:600; background:var(--accent-soft); border-radius:8px; padding:10px 12px}
+.hintline{font-size:16px; letter-spacing:.06em; color:var(--dim); margin-top:14px; font-family:ui-monospace,Menlo,Consolas,monospace}
 
 /* ── 코치마크(말풍선) ── */
 .coach{

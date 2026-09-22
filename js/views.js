@@ -346,6 +346,126 @@ VIEWS.blank = {
   }
 };
 
+/* ────────── 본문 암기 (한→영 인출) ──────────
+   읽고 알아보는 것과 직접 써내는 것은 다름. 서술형은 후자를 물어봄. */
+VIEWS.recall = {
+  mount(root, L){
+    const sents = sentsOf(L.passage);
+
+    root.innerHTML = `
+      <div class="bar">
+        <button class="btn pri" id="rGo">처음부터</button>
+        <button class="btn" id="rWrong">틀린 것만 다시</button>
+        <span class="count" id="rCnt"></span>
+      </div>
+      <div class="prog"><i id="rBar" style="width:0"></i></div>
+      <div class="card" id="rCard"></div>`;
+
+    let queue = [], at = 0, wrong = [], done = 0;
+
+    const start = list => {
+      queue = list.slice(); at = 0; wrong = []; done = 0; draw();
+    };
+
+    const draw = () => {
+      if (at >= queue.length) return end();
+      const [en, ko] = queue[at];
+      root.querySelector("#rBar").style.width = (at / queue.length * 100) + "%";
+      root.querySelector("#rCnt").textContent = `${at + 1} / ${queue.length}`;
+      root.querySelector("#rCard").innerHTML = `
+        <p class="ko-cue">${esc(ko)}</p>
+        <textarea id="rIn" rows="2" placeholder="영어로 써 보세요"></textarea>
+        <div class="bar" style="margin:10px 0 0">
+          <button class="btn pri" id="rCheck">채점</button>
+          <button class="btn" id="rHint">첫 글자 힌트</button>
+          <button class="btn" id="rSay">🔊 듣기</button>
+          <button class="btn" id="rSkip">모르겠음</button>
+        </div>
+        <div id="rOut"></div>`;
+
+      const ta = root.querySelector("#rIn");
+      ta.focus();
+      ta.onkeydown = e => {
+        if (e.key === "Enter" && !e.shiftKey){ e.preventDefault(); check(); }
+      };
+      root.querySelector("#rCheck").onclick = check;
+      root.querySelector("#rSay").onclick = () => TTS.play(en);
+      root.querySelector("#rHint").onclick = () =>
+        root.querySelector("#rOut").innerHTML =
+          `<div class="hintline">${en.split(/\s+/).map(w => esc(w[0]) + "_".repeat(Math.max(1, w.length - 1))).join(" ")}</div>`;
+      root.querySelector("#rSkip").onclick = () => reveal(false, ta.value);
+    };
+
+    const check = () => {
+      const mine = root.querySelector("#rIn").value;
+      reveal(norm(mine) === norm(queue[at][0]), mine);
+    };
+
+    /* 채점 결과 + 단어 단위로 어디가 틀렸는지 */
+    const reveal = (ok, mine) => {
+      const [en] = queue[at];
+      if (ok) done++; else wrong.push(queue[at]);
+      root.querySelector("#rIn").disabled = true;
+      root.querySelector("#rOut").innerHTML =
+        `<div class="verdict ${ok ? "ok" : "no"}">${ok ? "정답" : "다시 보기"}</div>` +
+        (ok ? "" : `<div class="diffline">${diff(mine, en)}</div>`) +
+        `<div class="answerline">${esc(en)} ${spk(en)}</div>` +
+        `<button class="btn pri" id="rNext" style="margin-top:10px">다음 →</button>`;
+      const next = root.querySelector("#rNext");
+      next.focus();
+      next.onclick = () => { at++; draw(); };
+      if (!ok) TTS.play(en);
+    };
+
+    const end = () => {
+      root.querySelector("#rBar").style.width = "100%";
+      root.querySelector("#rCnt").textContent = "";
+      root.querySelector("#rCard").innerHTML =
+        `<h2>${queue.length}문장 중 <span style="color:var(--accent)">${done}문장</span> 정답</h2>` +
+        (wrong.length
+          ? `<p class="note">틀린 ${wrong.length}문장은 "틀린 것만 다시"로 바로 다시 볼 수 있음.</p>
+             <ul class="rw">${wrong.map(([en, ko]) =>
+               `<li><b>${esc(en)}</b> ${spk(en)}<div class="eq">${esc(ko)}</div></li>`).join("")}</ul>`
+          : `<p class="note">전부 정답. 본문은 외운 걸로 봐도 됨.</p>`);
+      root.querySelector("#rWrong").disabled = !wrong.length;
+      lastWrong = wrong;
+    };
+
+    let lastWrong = [];
+    root.querySelector("#rGo").onclick = () => start(sents);
+    root.querySelector("#rWrong").onclick = () => lastWrong.length && start(lastWrong);
+    root.querySelector("#rWrong").disabled = true;
+    root.querySelector("#rCard").innerHTML =
+      `<p class="note">한국어를 보고 영어 문장을 직접 씁니다. 내신 서술형이 실제로 묻는 방식이라,
+       읽어서 아는 것과 써낼 수 있는 것의 차이를 여기서 잡습니다. 대소문자·구두점은 안 따집니다.</p>`;
+  }
+};
+
+/* 채점용 정규화 — 대소문자·구두점·중복 공백 무시 */
+const norm = s => s.toLowerCase().replace(/[.,!?;:'"’‘“”]/g, "").replace(/\s+/g, " ").trim();
+
+/* 최장 공통 부분수열로 내 답과 정답을 맞춰 보고, 틀린 자리만 표시 */
+function diff(mine, right){
+  const a = norm(mine).split(" ").filter(Boolean);
+  const b = norm(right).split(" ").filter(Boolean);
+  const m = Array.from({ length: a.length + 1 }, () => new Array(b.length + 1).fill(0));
+  for (let i = a.length - 1; i >= 0; i--)
+    for (let j = b.length - 1; j >= 0; j--)
+      m[i][j] = a[i] === b[j] ? m[i + 1][j + 1] + 1 : Math.max(m[i + 1][j], m[i][j + 1]);
+
+  const out = [];
+  let i = 0, j = 0;
+  const words = mine.trim().split(/\s+/).filter(Boolean);   // 원문 표기 그대로 보여주려고
+  while (i < a.length && j < b.length){
+    if (a[i] === b[j]){ out.push(esc(words[i] ?? a[i])); i++; j++; }
+    else if (m[i + 1][j] >= m[i][j + 1]){ out.push(`<s>${esc(words[i] ?? a[i])}</s>`); i++; }
+    else { out.push(`<u>${esc(b[j])}</u>`); j++; }
+  }
+  while (i < a.length) out.push(`<s>${esc(words[i] ?? a[i])}</s>`), i++;
+  while (j < b.length) out.push(`<u>${esc(b[j])}</u>`), j++;
+  return out.join(" ") + `<div class="difflegend"><s>지울 것</s> · <u>빠뜨린 것</u></div>`;
+}
+
 /* ────────── 문법 · 표현 ────────── */
 VIEWS.gram = {
   mount(root, L){
