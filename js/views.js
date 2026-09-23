@@ -352,67 +352,153 @@ VIEWS.blank = {
 };
 
 /* ────────── 본문 암기 (한→영 인출) ──────────
-   읽고 알아보는 것과 직접 써내는 것은 다름. 서술형은 후자를 물어봄. */
+   읽어서 아는 것과 백지에서 써내는 것은 다른 능력이고, 서술형은 후자를 묻는다.
+   그런데 중1한테 처음부터 백지를 주면 벽이 너무 높아 포기한다. 그래서 문장마다
+   단계를 두고, 맞히면 그 문장만 한 단계씩 올린다. 쓰다 보면 저절로 올라간다.
+
+     0 배열  — 단어를 순서대로 놓기 (어순만 익힘)
+     1 힌트  — 첫 글자만 보고 쓰기
+     2 백지  — 한국어만 보고 쓰기
+     3 익힘  — 통과
+
+   틀리면 한 단계 내려간다. 단계는 localStorage에 남아 다음 날로 이어진다. */
 VIEWS.recall = {
   mount(root, L){
     const sents = sentsOf(L.passage);
+    const LEVELS = ["배열", "힌트", "백지", "익힘"];
+
+    /* 한 번에 25문장은 너무 많음. 문단 단위로 끊어 풀게 함 */
+    const groups = [];
+    L.passage.forEach(item => {
+      if (!Array.isArray(item)) groups.push({ head: item.head || "본문", list: [] });
+      else if (groups.length) groups[groups.length - 1].list.push(item);
+    });
+    const short = h => h.split(/[,—]/)[0].trim().slice(0, 12);
+    const lv = en => Store.level(L.id, en);
+    const todo = () => sents.filter(s => lv(s[0]) < 3);
 
     root.innerHTML = `
+      <div class="bar" id="rRange">
+        <button class="btn pri" data-r="all">전체 <span class="secn">${sents.length}</span></button>
+        ${groups.map((g, i) => `<button class="btn" data-r="${i}" title="${esc(g.head)}">${esc(short(g.head))} <span class="secn">${g.list.length}</span></button>`).join("")}
+        <button class="btn" data-r="todo">복습할 것 <span class="secn" id="rTodoN">0</span></button>
+      </div>
       <div class="bar">
-        <button class="btn pri" id="rGo">처음부터</button>
-        <button class="btn" id="rWrong">틀린 것만 다시</button>
+        <button class="btn pri" id="rGo">시작</button>
+        <button class="btn" id="rReset" title="이 과의 단계 기록을 지움">기록 초기화</button>
         <span class="count" id="rCnt"></span>
       </div>
       <div class="prog"><i id="rBar" style="width:0"></i></div>
       <div class="card" id="rCard"></div>`;
 
-    let queue = [], at = 0, wrong = [], done = 0;
+    let queue = [], at = 0, done = 0, missed = [];
+    let readAnswer = () => "";
 
-    const start = list => {
-      queue = list.slice(); at = 0; wrong = []; done = 0; draw();
+    const picked = () => {
+      const r = root.querySelector("#rRange .pri")?.dataset.r ?? "all";
+      return r === "all" ? sents : r === "todo" ? todo() : groups[+r].list;
+    };
+    const refresh = () => {
+      root.querySelector("#rTodoN").textContent = todo().length;
+      root.querySelector("#rGo").disabled = picked().length === 0;
     };
 
-    const draw = () => {
+    root.querySelector("#rRange").onclick = e => {
+      const b = e.target.closest("[data-r]"); if (!b) return;
+      root.querySelectorAll("#rRange .btn").forEach(x => x.classList.toggle("pri", x === b));
+      intro();
+    };
+    root.querySelector("#rReset").onclick = () => { Store.clearLevels(L.id); intro(); };
+    root.querySelector("#rGo").onclick = () => {
+      const list = picked();
+      if (!list.length) return;
+      queue = shuffle(list); at = 0; done = 0; missed = []; draw();
+    };
+
+    /* ── 문제 한 장 ── */
+    function draw(){
       if (at >= queue.length) return end();
       const [en, ko] = queue[at];
+      const level = lv(en);
       root.querySelector("#rBar").style.width = (at / queue.length * 100) + "%";
       root.querySelector("#rCnt").textContent = `${at + 1} / ${queue.length}`;
       root.querySelector("#rCard").innerHTML = `
+        <div class="rtop">
+          <span class="lvtag lv${level}">${LEVELS[level]}</span>
+          <span class="lvdots">${LEVELS.slice(0, 3).map((n, i) =>
+            `<i class="${i < level ? "on" : ""}" title="${n}"></i>`).join("")}</span>
+        </div>
         <p class="ko-cue">${esc(ko)}</p>
-        <textarea id="rIn" rows="2" placeholder="영어로 써 보세요"></textarea>
-        <div class="bar" style="margin:10px 0 0">
+        <div id="rWork"></div>
+        <div class="bar" style="margin:12px 0 0">
           <button class="btn pri" id="rCheck">채점</button>
-          <button class="btn" id="rHint">첫 글자 힌트</button>
           <button class="btn" id="rSay">🔊 듣기</button>
           <button class="btn" id="rSkip">모르겠음</button>
         </div>
         <div id="rOut"></div>`;
+      root.querySelector("#rSay").onclick = () => TTS.play(en);
+      root.querySelector("#rSkip").onclick = () => reveal(false, readAnswer());
+      root.querySelector("#rCheck").onclick = () => reveal(norm(readAnswer()) === norm(en), readAnswer());
+      level === 0 ? buildScramble(en) : buildTyping(en, level);
+    }
 
+    /* 0단계 — 단어 조각을 순서대로 놓기 */
+    function buildScramble(en){
+      const words = en.split(/\s+/).filter(Boolean);
+      const bank = shuffle(words.map((w, i) => ({ w, i })));
+      const chosen = [];
+      const work = root.querySelector("#rWork");
+      work.innerHTML = `<div class="slot" id="rSlot"></div><div class="bank" id="rBank"></div>`;
+      const slot = work.querySelector("#rSlot"), bankEl = work.querySelector("#rBank");
+      const render = () => {
+        slot.innerHTML = chosen.length
+          ? chosen.map((c, k) => `<button class="chip pick" data-k="${k}">${esc(c.w)}</button>`).join("")
+          : `<span class="slothint">아래 단어를 순서대로 누르세요</span>`;
+        bankEl.innerHTML = bank
+          .map(c => chosen.includes(c) ? "" : `<button class="chip" data-i="${c.i}">${esc(c.w)}</button>`)
+          .join("");
+      };
+      bankEl.onclick = e => {
+        const b = e.target.closest(".chip"); if (!b) return;
+        chosen.push(bank.find(c => c.i === +b.dataset.i)); render();
+      };
+      slot.onclick = e => {
+        const b = e.target.closest(".chip"); if (!b) return;
+        chosen.splice(+b.dataset.k, 1); render();
+      };
+      readAnswer = () => chosen.map(c => c.w).join(" ");
+      render();
+    }
+
+    /* 1·2단계 — 직접 타이핑. 1단계는 첫 글자를 보여 줌 */
+    function buildTyping(en, level){
+      const hint = level === 1
+        ? `<div class="hintline">${en.split(/\s+/).map(w => esc(w[0]) + "_".repeat(Math.max(1, w.length - 1))).join(" ")}</div>`
+        : "";
+      root.querySelector("#rWork").innerHTML =
+        hint + `<textarea id="rIn" rows="2" placeholder="영어로 써 보세요"></textarea>`;
       const ta = root.querySelector("#rIn");
       ta.focus();
       ta.onkeydown = e => {
-        if (e.key === "Enter" && !e.shiftKey){ e.preventDefault(); check(); }
+        if (e.key === "Enter" && !e.shiftKey){ e.preventDefault(); root.querySelector("#rCheck").click(); }
       };
-      root.querySelector("#rCheck").onclick = check;
-      root.querySelector("#rSay").onclick = () => TTS.play(en);
-      root.querySelector("#rHint").onclick = () =>
-        root.querySelector("#rOut").innerHTML =
-          `<div class="hintline">${en.split(/\s+/).map(w => esc(w[0]) + "_".repeat(Math.max(1, w.length - 1))).join(" ")}</div>`;
-      root.querySelector("#rSkip").onclick = () => reveal(false, ta.value);
-    };
+      readAnswer = () => ta.value;
+    }
 
-    const check = () => {
-      const mine = root.querySelector("#rIn").value;
-      reveal(norm(mine) === norm(queue[at][0]), mine);
-    };
-
-    /* 채점 결과 + 단어 단위로 어디가 틀렸는지 */
-    const reveal = (ok, mine) => {
+    /* ── 채점: 맞으면 한 단계 위로, 틀리면 한 단계 아래로 ── */
+    function reveal(ok, mine){
       const [en] = queue[at];
-      if (ok) done++; else wrong.push(queue[at]);
-      root.querySelector("#rIn").disabled = true;
+      const was = lv(en);
+      const now = ok ? Math.min(3, was + 1) : Math.max(0, was - 1);
+      Store.setLevel(L.id, en, now);
+      if (ok) done++; else missed.push(queue[at]);
+      refresh();
+
+      root.querySelectorAll("#rWork button, #rWork textarea").forEach(x => x.disabled = true);
+      root.querySelectorAll("#rCheck, #rSkip").forEach(x => x.disabled = true);
       root.querySelector("#rOut").innerHTML =
-        `<div class="verdict ${ok ? "ok" : "no"}">${ok ? "정답" : "다시 보기"}</div>` +
+        `<div class="verdict ${ok ? "ok" : "no"}">${ok ? "정답" : "다시 보기"}
+           <span class="lvmove">${LEVELS[was]} → ${LEVELS[now]}</span></div>` +
         (ok ? "" : `<div class="diffline">${diff(mine, en)}</div>`) +
         `<div class="answerline">${esc(en)} ${spk(en)}</div>` +
         `<button class="btn pri" id="rNext" style="margin-top:10px">다음 →</button>`;
@@ -420,29 +506,48 @@ VIEWS.recall = {
       next.focus();
       next.onclick = () => { at++; draw(); };
       if (!ok) TTS.play(en);
-    };
+    }
 
-    const end = () => {
+    function end(){
       root.querySelector("#rBar").style.width = "100%";
       root.querySelector("#rCnt").textContent = "";
+      const left = todo().length;
       root.querySelector("#rCard").innerHTML =
         `<h2>${queue.length}문장 중 <span style="color:var(--accent)">${done}문장</span> 정답</h2>` +
-        (wrong.length
-          ? `<p class="note">틀린 ${wrong.length}문장은 "틀린 것만 다시"로 바로 다시 볼 수 있음.</p>
-             <ul class="rw">${wrong.map(([en, ko]) =>
+        (missed.length
+          ? `<ul class="rw">${missed.map(([en, ko]) =>
                `<li><b>${esc(en)}</b> ${spk(en)}<div class="eq">${esc(ko)}</div></li>`).join("")}</ul>`
-          : `<p class="note">전부 정답. 본문은 외운 걸로 봐도 됨.</p>`);
-      root.querySelector("#rWrong").disabled = !wrong.length;
-      lastWrong = wrong;
-    };
+          : `<p class="note">이 범위는 다 맞혔음.</p>`) +
+        (left
+          ? `<p class="note">아직 '익힘'이 안 된 문장 <b>${left}개</b>.
+             내일 <b>복습할 것</b>부터 시작하면 됨 — 한 번에 몰아서 외우는 것보다
+             며칠에 걸쳐 다시 만나는 쪽이 훨씬 오래 감.</p>
+             <button class="btn pri" id="rRetry" style="margin-top:10px">복습할 것 ${left}개 지금 다시</button>`
+          : `<p class="note">이 과 본문 전부 '익힘'. 기출 서술형으로 넘어가도 됨.</p>`);
+      const retry = root.querySelector("#rRetry");
+      if (retry) retry.onclick = () => {
+        root.querySelectorAll("#rRange .btn").forEach(x => x.classList.toggle("pri", x.dataset.r === "todo"));
+        queue = shuffle(todo()); at = 0; done = 0; missed = []; draw();
+      };
+    }
 
-    let lastWrong = [];
-    root.querySelector("#rGo").onclick = () => start(sents);
-    root.querySelector("#rWrong").onclick = () => lastWrong.length && start(lastWrong);
-    root.querySelector("#rWrong").disabled = true;
-    root.querySelector("#rCard").innerHTML =
-      `<p class="note">한국어를 보고 영어 문장을 직접 씁니다. 내신 서술형이 실제로 묻는 방식이라,
-       읽어서 아는 것과 써낼 수 있는 것의 차이를 여기서 잡습니다. 대소문자·구두점은 안 따집니다.</p>`;
+    function intro(){
+      const list = picked();
+      const byLv = [0, 0, 0, 0];
+      list.forEach(s => byLv[lv(s[0])]++);
+      root.querySelector("#rBar").style.width = "0";
+      root.querySelector("#rCnt").textContent = "";
+      root.querySelector("#rCard").innerHTML = `
+        <p class="note">한국어를 보고 영어 문장을 만듭니다. 문장마다 단계가 있어서,
+        맞히면 <b>배열 → 힌트 → 백지 → 익힘</b> 순으로 한 칸씩 올라가고 틀리면 한 칸 내려갑니다.
+        기록은 저장되니 내일 이어서 하면 됩니다.</p>
+        <div class="lvsum">${LEVELS.map((n, i) =>
+          `<span class="lvtag lv${i}">${n} ${byLv[i]}</span>`).join("")}</div>
+        ${list.length === 0 ? `<p class="note">고른 범위에 문장이 없음.</p>` : ""}`;
+      refresh();
+    }
+
+    intro();
   }
 };
 

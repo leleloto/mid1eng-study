@@ -18,19 +18,33 @@ const Store = {
   known(id){ return new Set(this._get("known" + id, [])); },
   setKnown(id, set){ this._set("known" + id, [...set]); },
   best(id){ return this._get("best" + id, 0); },
-  setBest(id, n){ this._set("best" + id, n); }
+  setBest(id, n){ this._set("best" + id, n); },
+
+  /* 본문 문장별 암기 단계(0 배열 → 1 힌트 → 2 백지 → 3 익힘).
+     세션을 넘겨 남아야 어제 틀린 문장을 오늘 다시 만날 수 있음. */
+  levels(id){ return this._get("lv" + id, {}); },
+  level(id, en){ return this.levels(id)[en] ?? 0; },
+  setLevel(id, en, n){
+    const m = this.levels(id);
+    m[en] = n;
+    this._set("lv" + id, m);
+  },
+  clearLevels(id){ this._set("lv" + id, {}); }
 };
 
+/* 순서 = 권장 학습 순서. 단어로 바닥을 깔고 → 뜻 파악 → 입에 붙이고 →
+   왜 그런 문장인지 → 빈칸으로 포인트 확인 → 백지에서 꺼내기 → 시험 형태.
+   '본문 암기'가 실제로 기억이 박히는 단계라 빈칸·문법 뒤에 둔다. */
 const TABS = [
   ["voca",   "단어장"],
   ["flash",  "플래시카드"],
   ["quiz",   "단어퀴즈"],
   ["shadow", "본문 쉐도잉"],
-  ["dialog", "대화문"],
+  ["gram",   "문법·표현"],
   ["blank",  "본문 빈칸"],
   ["recall", "본문 암기"],
-  ["exam",   "기출문제"],
-  ["gram",   "문법·표현"]
+  ["dialog", "대화문"],
+  ["exam",   "기출문제"]
 ];
 
 const App = {
@@ -104,6 +118,8 @@ const App = {
     TTS.stop();
     /* 재생 중 탭을 옮기면 소리는 멈추는데 '재생 중' 표시가 남음 */
     document.querySelectorAll(".ln.cur").forEach(e => e.classList.remove("cur"));
+    /* 말풍선은 가리키던 요소가 숨으면 화면 구석으로 튄다 */
+    Coach.hide();
     document.querySelectorAll("#panes section").forEach(s => s.classList.toggle("on", s.id === "s-" + tab));
     const el = document.querySelector("#s-" + tab);
     if (!this.mounted.has(tab)){

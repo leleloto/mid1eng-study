@@ -174,7 +174,35 @@ tr.known .word{color:inherit}
 .diffline u{color:var(--accent); font-weight:700; text-decoration-style:dotted}
 .difflegend{font-size:12px; color:var(--dim); margin-top:6px}
 .answerline{font-size:15px; font-weight:600; background:var(--accent-soft); border-radius:8px; padding:10px 12px}
-.hintline{font-size:16px; letter-spacing:.06em; color:var(--dim); margin-top:14px; font-family:ui-monospace,Menlo,Consolas,monospace}
+.hintline{font-size:16px; letter-spacing:.06em; color:var(--dim); margin:0 0 10px; font-family:ui-monospace,Menlo,Consolas,monospace}
+
+/* 단계 표시 */
+.rtop{display:flex; align-items:center; gap:10px; margin-bottom:12px}
+.lvtag{font-size:11px; font-weight:700; border-radius:999px; padding:2px 10px; white-space:nowrap}
+.lv0{background:var(--warn-soft); color:var(--warn)}
+.lv1{background:var(--bg); color:var(--dim); border:1px solid var(--line)}
+.lv2{background:var(--accent-soft); color:var(--accent)}
+.lv3{background:var(--accent); color:#fff}
+.lvdots{display:flex; gap:4px}
+.lvdots i{width:16px; height:3px; border-radius:2px; background:var(--line)}
+.lvdots i.on{background:var(--accent)}
+.lvmove{font-size:11px; font-weight:600; color:var(--dim); margin-left:8px}
+.lvsum{display:flex; gap:6px; flex-wrap:wrap; margin-top:12px}
+
+/* 단어 배열 */
+.slot{
+  min-height:52px; border:1px dashed var(--line); border-radius:8px; padding:8px;
+  display:flex; flex-wrap:wrap; gap:6px; align-content:flex-start; margin-bottom:12px;
+}
+.slothint{font-size:13px; color:var(--dim); align-self:center}
+.bank{display:flex; flex-wrap:wrap; gap:6px}
+.chip{
+  font:inherit; font-size:15px; padding:7px 12px; border-radius:7px; cursor:pointer;
+  border:1px solid var(--line); background:var(--card); color:var(--ink);
+}
+.chip:hover:not(:disabled){border-color:var(--accent); color:var(--accent)}
+.chip.pick{background:var(--accent-soft); border-color:var(--accent); color:var(--accent); font-weight:600}
+.chip:disabled{opacity:.55; cursor:default}
 
 /* ── 기출문제 ── */
 #secBar{gap:6px}
