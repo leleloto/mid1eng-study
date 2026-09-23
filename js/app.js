@@ -102,6 +102,8 @@ const App = {
   show(tab){
     this.tab = tab;
     TTS.stop();
+    /* 재생 중 탭을 옮기면 소리는 멈추는데 '재생 중' 표시가 남음 */
+    document.querySelectorAll(".ln.cur").forEach(e => e.classList.remove("cur"));
     document.querySelectorAll("#panes section").forEach(s => s.classList.toggle("on", s.id === "s-" + tab));
     const el = document.querySelector("#s-" + tab);
     if (!this.mounted.has(tab)){
