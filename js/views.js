@@ -17,6 +17,22 @@ const shuffle = a => a.slice().sort(() => Math.random() - .5);
 /* 본문/대화 데이터에서 { head } 구분자를 걸러 문장만 */
 const sentsOf = list => list.filter(x => Array.isArray(x));
 
+/* 원문에서 온전한 단어·구만 찾고, 각 키워드의 첫 등장에만 적용함. */
+function renderKeywords(en, keys, render){
+  if (!keys.length) return esc(en);
+  const pattern = keys.slice().sort((a, b) => b.length - a.length)
+    .map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const used = new Set();
+  let out = "", from = 0;
+  for (const match of en.matchAll(new RegExp("\\b(" + pattern + ")\\b", "g"))){
+    const key = match[0];
+    out += esc(en.slice(from, match.index)) + (used.has(key) ? esc(key) : render(key));
+    used.add(key);
+    from = match.index + key.length;
+  }
+  return out + esc(en.slice(from));
+}
+
 /* ────────── 단어장 ────────── */
 VIEWS.voca = {
   mount(root, L){
@@ -210,8 +226,7 @@ VIEWS.shadow = {
       const [en, ko, keys = []] = item;
       const i = idx++;
       if (groups.length) groups[groups.length - 1].to = idx;
-      let marked = esc(en);
-      keys.forEach(k => { marked = marked.replace(esc(k), `<b>${esc(k)}</b>`); });
+      const marked = renderKeywords(en, keys, k => `<b>${esc(k)}</b>`);
       return `<div class="ln" data-i="${i}" data-en="${esc(en)}">
                 <span class="no">${String(i + 1).padStart(2, "0")}</span>
                 <div class="body"><div class="en">${marked}</div><div class="ko">${esc(ko)}</div></div>
@@ -327,10 +342,8 @@ VIEWS.blank = {
         <h2>${esc(L.reading)} · 빈칸 채우기</h2>
         <p class="note" style="margin-bottom:10px">시험에 자주 나오는 전치사·접속사·동사 자리를 비워 둠. ▶로 문장을 듣고 채워도 됨.</p>
         <div id="bList">${sents.map(([en, ko, keys], i) => {
-          let body = esc(en);
-          keys.forEach(k => {
-            body = body.replace(esc(k), `<input class="blank" data-a="${esc(k)}" size="${Math.max(5, k.length)}">`);
-          });
+          const body = renderKeywords(en, keys, k =>
+            `<input class="blank" data-a="${esc(k)}" size="${Math.max(5, k.length)}">`);
           return `<div class="ln">
                     <span class="no">${String(i + 1).padStart(2, "0")}</span>
                     <div class="body"><div class="en">${body}</div><div class="ko">${esc(ko)}</div></div>

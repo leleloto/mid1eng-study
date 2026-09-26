@@ -15,6 +15,20 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     await page.evaluate(() => { TTS.play = async () => {}; });
     for (const id of [5, 6]) {
       await page.locator(`[data-id="${id}"]`).click();
+      await page.locator('[data-t=shadow]').click();
+      if (id === 5) {
+        const first = await page.locator('#sList .ln .en').first().innerHTML();
+        assert(first.includes('Last Saturday,'));
+        assert(first.includes('cake <b>at</b> the'));
+      }
+      await page.locator('[data-t=blank]').click();
+      const reconstructed = await page.locator('#bList .en').evaluateAll(rows => rows.map(row => {
+        const copy = row.cloneNode(true);
+        copy.querySelectorAll('input').forEach(input => input.replaceWith(input.dataset.a));
+        return copy.textContent;
+      }));
+      const expected = await page.evaluate(() => App.lesson.passage.filter(s => Array.isArray(s) && s[2]?.length).map(s => s[0]));
+      assert.deepEqual(reconstructed, expected);
       await page.locator('[data-t=quiz]').click();
       const words = await page.evaluate(() => App.lesson.voca);
       for (const reverse of [false, true]) {
@@ -52,7 +66,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
       await page.locator('[data-t=recall]').click();
       await page.locator('#rGo').click();
       assert(await page.locator('#rBank .chip').count() > 0);
-      console.log(`Lesson ${id}: all words, both directions, retry, record, recall PASS`);
+      console.log(`Lesson ${id}: shadow, blanks, all words, both directions, retry, record, recall PASS`);
     }
     assert.deepEqual(errors, []);
   } finally { await browser.close(); }
