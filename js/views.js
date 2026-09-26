@@ -113,15 +113,17 @@ VIEWS.quiz = {
   mount(root, L){
     root.innerHTML = `
       <div class="bar">
-        <button class="btn pri" id="qGo">20문제 시작</button>
+        <button class="btn pri" id="qGo">전체 ${L.voca.length}문제 시작</button>
         <button class="btn" id="qDir">영어 → 뜻</button>
         <span class="count" id="qBest"></span>
       </div>
       <div class="prog"><i id="qBar" style="width:0"></i></div>
-      <div class="card" id="qCard"><p class="note">시작을 누르면 4지선다 문제가 나옴. 틀린 문제는 끝나고 모아서 보여줌.</p></div>`;
+      <div class="card" id="qCard"><p class="note">모든 단어를 한 번씩 풀고, 틀린 단어만 다시 풀 수 있음. 뜻 → 영어도 4지선다임.</p></div>`;
 
     let list = [], qi = 0, score = 0, wrong = [], enFirst = true;
-    const best = () => root.querySelector("#qBest").textContent = "최고 기록 " + Store.best(L.id) + "점";
+    let timer, retrying = false;
+    const bestKey = () => "quizPercent" + L.id + (enFirst ? "en" : "ko");
+    const best = () => root.querySelector("#qBest").textContent = "전체 퀴즈 최고 정답률 " + Store._get(bestKey(), 0) + "%";
 
     const draw = () => {
       if (qi >= list.length) return end();
@@ -135,32 +137,40 @@ VIEWS.quiz = {
       if (enFirst) TTS.play(v[0]);
       root.querySelectorAll(".opt").forEach(b => b.onclick = () => {
         const ok = b.dataset.o === a;
-        ok ? score++ : wrong.push([q, a]);
+        ok ? score++ : wrong.push(v);
         root.querySelectorAll(".opt").forEach(x => {
           x.disabled = true;
           if (x.dataset.o === a) x.classList.add("right");
           else if (x === b) x.classList.add("wrong");
         });
-        setTimeout(() => { qi++; draw(); }, ok ? 320 : 950);
+        timer = setTimeout(() => { qi++; draw(); }, ok ? 320 : 950);
       });
     };
     const end = () => {
       root.querySelector("#qBar").style.width = "100%";
-      Store.setBest(L.id, Math.max(Store.best(L.id), score)); best();
+      root.querySelector("#qDir").disabled = false;
+      if (!retrying) Store._set(bestKey(), Math.max(Store._get(bestKey(), 0), Math.round(score / list.length * 100)));
+      best();
       root.querySelector("#qCard").innerHTML =
         `<h2>${list.length}문제 중 <span style="color:var(--accent)">${score}개</span> 정답</h2>` +
         (wrong.length
-          ? `<h3>틀린 문제</h3><table><tbody>${wrong.map(([q, a]) =>
-              `<tr><td class="en">${esc(q)}</td><td class="ko">${esc(a)}</td><td class="act">${spk(q)}</td></tr>`).join("")}</tbody></table>`
+          ? `<button class="btn pri" id="qRetry">틀린 단어 ${wrong.length}개 다시 풀기</button><h3>틀린 단어</h3><table><tbody>${wrong.map(([en, ko]) =>
+              `<tr><td class="en">${esc(en)}</td><td class="ko">${esc(ko)}</td><td class="act">${spk(en)}</td></tr>`).join("")}</tbody></table>`
           : `<p class="note">전부 정답.</p>`);
+      const retry = root.querySelector("#qRetry");
+      if (retry) retry.onclick = () => start(wrong, true);
     };
 
-    root.querySelector("#qGo").onclick = () => {
-      list = shuffle(L.voca).slice(0, Math.min(20, L.voca.length));
+    const start = (words, retry) => {
+      clearTimeout(timer);
+      list = shuffle(words); retrying = retry;
+      root.querySelector("#qDir").disabled = true;
       qi = 0; score = 0; wrong = []; draw();
     };
+    root.querySelector("#qGo").onclick = () => start(L.voca, false);
     root.querySelector("#qDir").onclick = e => {
       enFirst = !enFirst; e.target.textContent = enFirst ? "영어 → 뜻" : "뜻 → 영어";
+      best();
     };
     best();
   }
