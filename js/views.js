@@ -388,6 +388,10 @@ VIEWS.blank = {
 VIEWS.recall = {
   mount(root, L){
     const sents = sentsOf(L.passage);
+    const chunks = new Map((L.recallChunks || []).map(line => {
+      const parts = line.split(" / ");
+      return [parts.join(" "), parts];
+    }));
     const LEVELS = ["배열", "힌트", "백지", "익힘"];
 
     /* 한 번에 25문장은 너무 많음. 문단 단위로 끊어 풀게 함 */
@@ -465,9 +469,9 @@ VIEWS.recall = {
       level === 0 ? buildScramble(en) : buildTyping(en, level);
     }
 
-    /* 0단계 — 단어 조각을 순서대로 놓기 */
+    /* 0단계 — 의미 단위로 묶은 표현을 순서대로 놓기 */
     function buildScramble(en){
-      const words = en.split(/\s+/).filter(Boolean);
+      const words = chunks.get(en) || [en];
       const bank = shuffle(words.map((w, i) => ({ w, i })));
       const chosen = [];
       const work = root.querySelector("#rWork");
@@ -476,7 +480,7 @@ VIEWS.recall = {
       const render = () => {
         slot.innerHTML = chosen.length
           ? chosen.map((c, k) => `<button class="chip pick" data-k="${k}">${esc(c.w)}</button>`).join("")
-          : `<span class="slothint">아래 단어를 순서대로 누르세요</span>`;
+          : `<span class="slothint">아래 표현을 의미에 맞게 순서대로 누르세요</span>`;
         bankEl.innerHTML = bank
           .map(c => chosen.includes(c) ? "" : `<button class="chip" data-i="${c.i}">${esc(c.w)}</button>`)
           .join("");
@@ -561,7 +565,7 @@ VIEWS.recall = {
       root.querySelector("#rBar").style.width = "0";
       root.querySelector("#rCnt").textContent = "";
       root.querySelector("#rCard").innerHTML = `
-        <p class="note">한국어를 보고 영어 문장을 만듭니다. 문장마다 단계가 있어서,
+        <p class="note">한국어를 보고 의미 단위로 묶인 표현을 배열해 영어 문장을 만듭니다. 문장마다 단계가 있어서,
         맞히면 <b>배열 → 힌트 → 백지 → 익힘</b> 순으로 한 칸씩 올라가고 틀리면 한 칸 내려갑니다.
         기록은 저장되니 내일 이어서 하면 됩니다.</p>
         <div class="lvsum">${LEVELS.map((n, i) =>

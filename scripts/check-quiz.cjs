@@ -65,7 +65,12 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
       }
       await page.locator('[data-t=recall]').click();
       await page.locator('#rGo').click();
-      assert(await page.locator('#rBank .chip').count() > 0);
+      const chips = await page.locator('#rBank .chip').allTextContents();
+      assert(chips.length >= 2 && chips.length <= 7);
+      assert(chips.some(text => text.includes(' ')), 'Recall must use meaning chunks');
+      for (let i = 0; i < chips.length; i++) await page.locator(`#rBank [data-i="${i}"]`).click();
+      await page.locator('#rCheck').click();
+      assert.match(await page.locator('#rOut').innerText(), /정답/);
       console.log(`Lesson ${id}: shadow, blanks, all words, both directions, retry, record, recall PASS`);
     }
     assert.deepEqual(errors, []);
