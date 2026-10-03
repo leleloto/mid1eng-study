@@ -92,7 +92,8 @@ const App = {
       const b = e.target.closest("[data-say]"); if (!b) return;
       document.querySelectorAll(".spk.playing").forEach(x => x.classList.remove("playing"));
       b.classList.add("playing");
-      TTS.play(b.dataset.say).then(() => b.classList.remove("playing"));
+      const slow = b.closest("#s-shadow")?.querySelector("#sRate")?.getAttribute("aria-pressed") === "true";
+      TTS.play(b.dataset.say, slow ? 0.7 : 1).then(() => b.classList.remove("playing"));
     });
 
     document.addEventListener("keydown", e => {
