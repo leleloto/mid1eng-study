@@ -44,7 +44,8 @@ const TABS = [
   ["blank",  "본문 빈칸"],
   ["recall", "본문 암기"],
   ["dialog", "대화문"],
-  ["exam",   "기출문제"]
+  ["exam",   "기출문제"],
+  ["worksheet", "학교 학습지"]
 ];
 
 const App = {
