@@ -29,7 +29,7 @@ VIEWS.worksheet = {
         const correct=worksheetCorrect(q,value);
         const answer=q.choices ? q.choices[Number(q.answer[0])-1] : q.answer[0];
         const field=q.choices ? `<div class="choices">${q.choices.map((c,j)=>`<label class="ch"><input type="radio" name="w${i}" data-wanswer="${i}" value="${j+1}" ${value===String(j+1)?'checked':''} ${state.graded?'disabled':''}><span class="chn">${j+1}.</span><span>${esc(c)}</span></label>`).join('')}</div>`
-          : `<input class="exin" type="text" data-wanswer="${i}" value="${esc(value)}" aria-label="${esc(q.no)}번 답" placeholder="${group.id==='words'?'영어 단어·표현을 쓰세요':'답을 쓰세요'}" autocomplete="off" autocapitalize="off" spellcheck="false" ${state.graded?'disabled':''}>`;
+          : `<input class="exin" type="text" data-wanswer="${i}" value="${esc(value)}" aria-label="${esc(q.no)}번 답" placeholder="${group.id==='words'?'':'답을 쓰세요'}" autocomplete="off" autocapitalize="off" spellcheck="false" ${state.graded?'disabled':''}>`;
         return `<div class="card wq"><div class="exhead"><span class="exno">${esc(q.no)}</span><span class="exprompt">${esc(q.prompt)}</span></div>${q.passage?`<pre class="expass">${esc(q.passage)}</pre>`:''}${field}
           ${state.graded?`<div class="exres ${correct?'ok':'no'}">${correct?'정답':value?'오답':'미응답'}${correct?'':` — 정답: ${esc(answer)}`}</div>${q.explanation?`<p class="note">${esc(q.explanation)}</p>`:''}`:''}</div>`;
       }).join('');
